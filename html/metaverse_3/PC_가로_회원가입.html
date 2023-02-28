@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC_가로_회원가입</title>
+    <link rel="stylesheet" type="text/css" href="/resources/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/contents.css" />
+
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <main class="contents" id="contents">
+            <div class="layer-pop" id="dialog1" role="dialog" aria-modal="true" aria-labelledby="dialog_label1" aria-describedby="dialog_desc1">
+                <dl class="layer-wrap">
+                    <dt class="layer-top">
+                        <button type="button" class="layer-close">
+                            <img src="/resources/images/icon_close_16.svg" alt="닫기 버튼 이미지" />
+                        </button>
+                    </dt>
+                    <dd class="layer-cont" id="dialog_desc" tabindex="0">
+                        <!-- contents -->
+                        <div class="login-wrap">
+                            <h1 class="login-tit">환영합니다!</h1>
+                            <div class="form-join">
+                                <dl>
+                                    <dt class="form-label">
+                                        <label for="name">닉네임 입력 <span>(영문/숫자/한글 2~8자 이내로 입력)</span></label>
+                                    </dt>
+                                    <dd>
+                                        <div class="form-control">
+                                            <input type="text" id="name" placeholder="닉네임을 입력하세요." />
+                                        </div>
+                                        <p class="form-notice error">Support text / 에러문구</p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt class="form-label"><label for="avatar-radio">아바타 선택</label></dt>
+                                    <dd class="avatar">
+                                        <div class="form-control-group">
+                                            <div class="profile-img">
+                                                <img src="/resources/images/img_avatar.svg" alt="아바타 기본 이미지" />
+                                                <div class="form-check">
+                                                    <input type="radio" name="radioSet" id="radio1" checked/>
+                                                    <label for="radio1">남성 기본</label>
+                                                </div>
+                                            </div>
+                                            <div class="profile-img">
+                                                <img src="/resources/images/img_avatar.svg" alt="아바타 기본 이미지" />
+                                                <div class="form-check">
+                                                    <input type="radio" name="radioSet" id="radio2" />
+                                                    <label for="radio2">여성 기본</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="form-notice">아바타 외형은 마이룸에서 언제든지 변경 가능합니다.</p>
+                                    </dd>
+                                </dl>
+                                <div class="btn-group">
+                                     <button type="button" class="btn btn-enter disabled">입장</button>
+                                    <!-- <button type="button" class="btn btn-enter active">입장</button> -->
+                                    <p class="form-notice">이미 보유한 아바타로 입장하시려면<br /> 로그인하세요.</p>
+                                    <button type="button" class="btn btn-login">로그인</button>
+                                </div>                               
+                            </div>
+                        </div>                        
+                        <!-- //contents -->
+                    </dd>
+                </dl>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

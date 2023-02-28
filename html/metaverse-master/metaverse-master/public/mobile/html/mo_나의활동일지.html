@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Metaverse</title>
+
+    <!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/plugin.min.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/style-song.css" />
+
+	<!-- JS -->
+    <script type="text/javascript" src="../resources/js/plugin.js"></script>
+    <script type="text/javascript" src="../resources/js/script-song.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <!-- header -->
+    </div>
+
+    <!-- content area -->    
+    <div class="container">
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col-12 col-sm-6">2</div>
+        </div>
+    </div>
+
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        전체 팝업 열기
+    </button>
+    
+    <!-- 마이 설정 -->
+    <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: block;"> <!-- 개발시 : show 클래스 삭제, style="display: block;" 삭제 -->
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">나의 활동 일지</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="../resources/images/icon/close.svg" alt="" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-7">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="selectstyle">
+                                        <select name="" id="">
+                                            <option value="hide">옵션</option>
+                                            <option selected>옵션</option>
+                                            <option value="1">옵션</option>
+                                            <option value="2">옵션</option>
+                                            <option value="3">옵션</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="ml10">
+                                        <div class="form-group diarydate">
+                                            <label for="" class="d-none">날짜선택</label>
+                                            <input type="text" id="diarydate" class="form-control" name="diarydate" value="" />
+                                        </div>                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="myactivitydiary_wrap">
+                                <div class="accdian_wrap">
+                                    <div class="table-th">
+                                        <div class="row">
+                                            <div class="col-1">번호</div>
+                                            <div class="col-3">스페이스</div>
+                                            <div class="col-3">참여유형</div>
+                                            <div class="col-4">날짜</div>
+                                            <div class="col-1">상세</div>
+                                        </div>
+                                    </div>
+                                    <!-- 반복 -->
+                                    <div class="acc_item">
+                                        <div class="table-td acc_tit" onClick="toggleAccdian($(this))">
+                                            <div class="row">
+                                                <div class="col-1">1</div>
+                                                <div class="col-3">상담실</div>
+                                                <div class="col-3">상담사</div>
+                                                <div class="col-4">23-01-26</div>
+                                                <div class="col-1"></div>
+                                            </div>
+                                        </div>
+                                        <div class="acc_cont">
+                                            <dl>
+                                                <dt class="tit">
+                                                    <span class="">이용시간 14:30:00~14:30:00</span>
+                                                    <span class="pl20"></span>총 시간 14:30:00</span>
+                                                </dt>
+                                                <dd class="desc">
+                                                    상담실<br />
+                                                    sdfghsdfghjcx (방 코드 표시)<br />
+                                                    학번과 이름을 작성해 주세요. <br />
+                                                    (상담등록시 상담정보 작성 내용 표시)<br />
+                                                    <br />
+                                                    1. 혜진킴 (참여자닉네임) 01:30:1~02:30:00 <br />
+                                                        (입장 시간 및 퇴장시간 표시)<br />
+                                                    2. 내가버스 01:30:11~02:30:00<br />
+                                                    3. 경찬성 01:30:11~02:30:00<br />
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <!-- //반복 -->
+                                    <div class="acc_item">
+                                        <div class="table-td acc_tit" onClick="toggleAccdian($(this))">
+                                            <div class="row">
+                                                <div class="col-1">2</div>
+                                                <div class="col-3">상담실</div>
+                                                <div class="col-3">상담사</div>
+                                                <div class="col-4">23-01-26</div>
+                                                <div class="col-1"></div>
+                                            </div>
+                                        </div>
+                                        <div class="acc_cont">
+                                            <dl>
+                                                <dt class="tit">
+                                                    <span class="">이용시간 14:30:00~14:30:00</span>
+                                                    <span class="pl20"></span>총 시간 14:30:00</span>
+                                                </dt>
+                                                <dd class="desc">
+                                                    상담실<br />
+                                                    sdfghsdfghjcx (방 코드 표시)<br />
+                                                    학번과 이름을 작성해 주세요. <br />
+                                                    (상담등록시 상담정보 작성 내용 표시)<br />
+                                                    <br />
+                                                    1. 혜진킴 (참여자닉네임) 01:30:1~02:30:00 <br />
+                                                        (입장 시간 및 퇴장시간 표시)<br />
+                                                    2. 내가버스 01:30:11~02:30:00<br />
+                                                    3. 경찬성 01:30:11~02:30:00<br />
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="acc_item">
+                                        <div class="table-td acc_tit" onClick="toggleAccdian($(this))">
+                                            <div class="row">
+                                                <div class="col-1">3</div>
+                                                <div class="col-3">상담실</div>
+                                                <div class="col-3">상담사</div>
+                                                <div class="col-4">23-01-26</div>
+                                                <div class="col-1"></div>
+                                            </div>
+                                        </div>
+                                        <div class="acc_cont">
+                                            <dl>
+                                                <dt class="tit">
+                                                    <span class="">이용시간 14:30:00~14:30:00</span>
+                                                    <span class="pl20"></span>총 시간 14:30:00</span>
+                                                </dt>
+                                                <dd class="desc">
+                                                    상담실<br />
+                                                    sdfghsdfghjcx (방 코드 표시)<br />
+                                                    학번과 이름을 작성해 주세요. <br />
+                                                    (상담등록시 상담정보 작성 내용 표시)<br />
+                                                    <br />
+                                                    1. 혜진킴 (참여자닉네임) 01:30:1~02:30:00 <br />
+                                                        (입장 시간 및 퇴장시간 표시)<br />
+                                                    2. 내가버스 01:30:11~02:30:00<br />
+                                                    3. 경찬성 01:30:11~02:30:00<br />
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--// content area -->
+
+    <div class="footer">
+        <!-- footer -->
+    </div>
+
+<script>
+    // 이미지 selectBox
+    $('.selectstyle select').each(function(){
+        var $this = $(this), numberOfOptions = $(this).children('option').length;
+    
+        $this.addClass('select-hidden'); 
+        $this.wrap('<div class="select"></div>');
+        $this.after('<div class="select-styled"></div>');
+    
+        var $styledSelect = $this.next('div.select-styled');
+        $styledSelect.text($this.children('option').eq(0).text());
+    
+        var $list = $('<ul />', {
+            'class': 'select-options'
+        }).insertAfter($styledSelect);
+    
+        for (var i = 0; i < numberOfOptions; i++) {
+            $('<li />', {
+                text: $this.children('option').eq(i).text(),
+                rel: $this.children('option').eq(i).val()
+            }).appendTo($list);
+        }
+    
+        var $listItems = $list.children('li');
+    
+        $styledSelect.on("click", function(e) {
+            e.stopPropagation();
+            $('div.select-styled.active').not(this).each(function(){
+                $(this).removeClass('active').next('ul.select-options').hide();
+            });
+            $(this).toggleClass('active').next('ul.select-options').toggle();
+        });
+    
+        $listItems.on("click", function(e) {
+            e.stopPropagation();
+            $styledSelect.text($(this).text()).removeClass('active');
+            $this.val($(this).attr('rel'));
+            $list.hide();
+            //console.log($this.val());
+        });
+    
+        $(document).on("click", function() {
+            $styledSelect.removeClass('active');
+            $list.hide();
+        });
+    
+    });
+    
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(function () {
+            $('#diarydate').daterangepicker({
+                "locale": {
+                    "format": "YYYY.MM.DD",
+                    "separator": " ~ ",
+                    "applyLabel": "확인",
+                    "cancelLabel": "취소",
+                    "fromLabel": "From",
+                    "toLabel": "To",
+                    "customRangeLabel": "Custom",
+                    "weekLabel": "W",
+                    "daysOfWeek": ["S", "S", "M", "T", "W", "T", "F"],
+                    // "daysOfWeek": ["토", "일", "월", "화", "수", "목", "금"],
+                    "monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+                    "firstDay": 1
+                },
+                // "showDropdowns": true,
+                "singleDatePicker": false, //true = 달력 하나 / false(기본) = 달력 두 개
+                "startDate": "2023.02.24",
+                "endDate": "2023.02.28",
+                "opens": "left"
+                }, function(start, end, label) {
+                console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+            });
+        });
+    });
+</script>
+</body>
+</html>

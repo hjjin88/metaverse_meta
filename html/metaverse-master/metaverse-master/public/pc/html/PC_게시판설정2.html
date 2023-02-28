@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Metaverse</title>
+
+    <!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/plugin.min.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/style-song.css" />
+
+	<!-- JS -->
+    <script type="text/javascript" src="../resources/js/plugin.js"></script>
+    <script type="text/javascript" src="../resources/js/script-song.js"></script>
+</head>
+<body>
+
+    <div class="header"> 
+        <!-- header -->
+    </div>
+
+    <!-- content area -->    
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-12 col-sm-6"></div>
+        </div>
+    </div>
+
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        팝업 열기
+    </button>    
+    
+    <!-- 팝업 -->
+    <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: block;"> <!-- 개발시 : show 클래스 삭제, style="display: block;" 삭제 -->
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">게시판 설정</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><img src="../resources/images/icon/icon-close.jpg" alt="" /></span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <h6 class="h6-title pb20">게시판 썸네일 설정</h6>
+                <div class="box-gray mb40">
+                    <img src="../resources/images/temp/temp_photo01_180.jpg" alt="" />
+                    <div class="btn-wrap position-absolute box-right">
+                        <button type="button" class="btn btn-white btn-sm">변경</button>
+                        <button type="button" class="btn btn-white btn-sm">삭제</button>
+                    </div>
+                </div>
+                
+                <h6 class="h6-title pb20">게시판 이미지 설정</h6>
+                <div class="box-gray scrolltype mb40">
+                    <div class="scrolltype">
+                        <img src="../resources/images/temp/temp_photo01_247.jpg" alt="" />
+                    </div>
+                    <div class="btn-wrap position-absolute box-right">
+                        <button type="button" class="btn btn-white btn-sm">변경</button>
+                        <button type="button" class="btn btn-white btn-sm">삭제</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-outline-secondary big" data-dismiss="modal">확인</button> -->
+              <button type="button" class="btn btn-primary big" data-dismiss="modal">확인</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--// content area -->
+
+    <div class="footer">
+        <!-- footer -->
+    </div>
+
+</body>
+</html>

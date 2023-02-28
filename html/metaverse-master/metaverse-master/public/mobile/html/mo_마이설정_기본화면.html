@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Metaverse</title>
+
+    <!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/plugin.min.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/style-song.css" />
+
+	<!-- JS -->
+    <script type="text/javascript" src="../resources/js/plugin.js"></script>
+    <script type="text/javascript" src="../resources/js/script-song.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <!-- header -->
+    </div>
+
+    <!-- content area -->
+    <div class="container">
+
+    </div>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        마이 설정 전체 팝업
+    </button>
+    
+    <!-- 마이 설정 -->
+    <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: block;"> <!-- 개발시 : show 클래스 삭제, style="display: block;" 삭제 -->
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">마이 설정</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="../resources/images/icon/close.svg" alt="" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h6>디바이스 설정</h6>
+                            <dl class="portraitmode">
+                                <dt class="tit-13 mt20">
+                                    마이크/카메라 연결 확인
+                                </dt>
+                                <dd class="desc-10 pt10">
+                                    (설정 > 개인정보 및 보안 > 권한에서 카메라와 마이크 권한 허용이 되어있는지 확인하세요.
+                                </dd>
+                            </dl>
+                            <div class="area-deviceset mt20">
+                                <div class="devicestatusinfo">카메라 없음</div>
+                                <ul class="iconinfo">
+                                    <li>
+                                        <img src="../resources/images/icon/icon-cam-off.svg" alt="" />
+                                    </li>
+                                    <li class="ml10">
+                                        <img src="../resources/images/icon/icon-mice-on.svg" alt="" />
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 col-sm-6 landscapemodegap30">
+                            <dl>
+                                <dt class="tit-13 mt20">
+                                    마이크
+                                </dt>
+                                <dd class="desc-10 pt10">
+                                    <div class="selectstyle borderbottom">
+                                        <select name="" id="">
+                                            <option value="hide">기본값-마이크배열(디지털마이크)</option>
+                                            <option selected>기본값-마이크배열(디지털마이크)</option>
+                                            <option value="1">기본값-마이크배열(디지털마이크)</option>
+                                            <option value="2">기본값-마이크배열(디지털마이크)</option>
+                                            <option value="3">기본값-마이크배열(디지털마이크)</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="tit-13 mt20">
+                                    카메라
+                                </dt>
+                                <dd class="desc-10 pt10">
+                                    <div class="selectstyle borderbottom">
+                                        <select name="" id="">
+                                            <option value="hide">720p HD Camera</option>
+                                            <option selected>720p HD Camera</option>
+                                            <option value="1">720p HD Camera</option>
+                                            <option value="2">720p HD Camera</option>
+                                            <option value="3">720p HD Camera</option>
+                                        </select>
+                                    </div>                                    
+                                </dd>
+                            </dl>
+                            <dl class="landscapemode">
+                                <dt class="tit-13 mt20">
+                                    마이크/카메라 연결 확인
+                                </dt>
+                                <dd class="desc-10 pt10">
+                                    (설정 > 개인정보 및 보안 > 권한에서 카메라와 마이크 권한 허용이 되어있는지 확인하세요.
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<script>
+// 이미지 selectBox
+$('.selectstyle select').each(function(){
+	var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+	$this.addClass('select-hidden'); 
+	$this.wrap('<div class="select"></div>');
+	$this.after('<div class="select-styled"></div>');
+
+	var $styledSelect = $this.next('div.select-styled');
+	$styledSelect.text($this.children('option').eq(0).text());
+
+	var $list = $('<ul />', {
+		'class': 'select-options'
+	}).insertAfter($styledSelect);
+
+	for (var i = 0; i < numberOfOptions; i++) {
+		$('<li />', {
+			text: $this.children('option').eq(i).text(),
+			rel: $this.children('option').eq(i).val()
+		}).appendTo($list);
+		//if ($this.children('option').eq(i).is(':selected')){
+		//  $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
+		//}
+	}
+
+	var $listItems = $list.children('li');
+
+	$styledSelect.on("click", function(e) {
+		e.stopPropagation();
+		$('div.select-styled.active').not(this).each(function(){
+			$(this).removeClass('active').next('ul.select-options').hide();
+		});
+		$(this).toggleClass('active').next('ul.select-options').toggle();
+	});
+
+	$listItems.on("click", function(e) {
+		e.stopPropagation();
+		$styledSelect.text($(this).text()).removeClass('active');
+		$this.val($(this).attr('rel'));
+		$list.hide();
+		//console.log($this.val());
+	});
+
+	$(document).on("click", function() {
+		$styledSelect.removeClass('active');
+		$list.hide();
+	});
+
+});
+</script>
+    <!--// content area -->
+
+    <div class="footer">
+        <!-- footer -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{overflow-x:hidden;margin:0px; font: 1rem/1 'Pretendard', 'Noto Sans KR', '.SFNSText-Regular','San Francisco','Segoe UI','Helvetica Neue','Lucida Grande',sans-serif;font-weight: 400;color: #333;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-webkit-font-smoothing: antialiased;}
+
+/* PC 크기 (임시) */
+.wrapper {overflow-y: auto; max-width: 1920px; min-width: 1200px; min-height: 100%; background:#fff url(/resources/images/bg_pc_main.jpg) no-repeat; background-size: contain;}
+
+/*********** contents  ***********/
+/* layer-pop */
+.layer-pop {position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 100; display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, .5);}
+.layer-pop .layer-wrap {position: relative; background-color: #fff; border-radius: 20px;}
+.layer-pop .layer-wrap .layer-top {}
+.layer-pop .layer-wrap .layer-top .layer-close {position: absolute; top: 22px; right: 24px;}
+.layer-pop .layer-wrap .layer-cont {overflow-y: auto;}
+
+.login-wrap {width: 812px; height: 705px; padding: 74px 70px 0; margin-bottom: 30px;}
+.login-wrap .login-tit {margin-bottom: 50px; color: #000; font-weight: 600; font-size: 26px; line-height: 100%; text-align: center;} 
+.login-wrap .form-join {}
+.login-wrap .form-join dl+dl {margin-top: 40px;}
+.login-wrap .form-join .form-label {margin-bottom: 13px; color: #000; font-size: 13px; line-height: 100%; font-weight: 700;}
+.login-wrap .form-join .form-label span {padding-left: 6px; color: rgba(0, 0, 0, 0.3); font-weight: 400;}
+.login-wrap .form-join .form-control {border-bottom: 1px solid rgba(238, 238, 238, 0.6);}
+.login-wrap .form-join .form-control input {height: 32px; padding-bottom: 18px; color: #333; font-size: 13px; line-height: 100%; border: none; outline: none;}
+.login-wrap .form-join .form-control input::placeholder {color: rgba(0, 0, 0, 0.15);}
+.login-wrap .form-join .form-control input:focus::placeholder {color: transparent;}
+.login-wrap .form-join .form-notice {position: relative; margin-top: 5px;}
+.login-wrap .form-join .form-notice.error {padding-left: 18px; color: #f52c1d; font-size: 12px; font-weight: 400; line-height: 100%; letter-spacing: -0.01em;}
+.login-wrap .form-join .form-notice.error::before {content: ''; position: absolute; left: 0; top: 50%; width: 16px; height: 16px; background: url(/resources/images/icon_error.svg) no-repeat center; transform: translateY(-50%);}
+.login-wrap .form-join dl dd.avatar {display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 16px 0; border: 1px solid #E6E8F1; border-radius: 20px;}
+.login-wrap .form-join dl dd.avatar .form-notice {margin-top: 0; color: rgba(0, 0, 0, 0.3); font-size: 13px; font-weight: 500; line-height: 140%; text-align: center; letter-spacing: -0.01em;}
+.login-wrap .form-join dl dd.avatar .form-control-group {display: flex; gap: 44px;}
+.login-wrap .form-join dl dd.avatar .profile-img {display: flex; flex-direction: column; gap: 8px;}
+.login-wrap .form-join dl dd.avatar .profile-img input[type="radio"] {width: 16px; height: 16px; border-radius: 50%;  border: 1px solid #ddd; background-color: #fff; cursor: pointer; appearance: none;}
+.login-wrap .form-join dl dd.avatar .profile-img input[type="radio"]:checked {border-width: 4px; border-color: #C0B2FB; background-color: #8265F6;}
+.login-wrap .form-join dl dd.avatar .profile-img label {color: #222; font-size: 14px; line-height: 100%; font-weight: 500; letter-spacing: -0.01em;}
+.login-wrap .form-join .btn-group {display: flex; flex-direction: column; align-items: center; width: 335px; margin: 20px auto 0;}
+.login-wrap .form-join .btn-group .btn {display: inline-flex; align-items: center; justify-content: center; width: 335px; padding: 18px 0; background-color: #fff; border: 1px solid #bbb; border-radius: 999px; color: #333; font-size: 20px; font-weight: 700; line-height: 100%; text-align: center;}
+.login-wrap .form-join .btn-group .btn.disabled {color: #DDDDDD;}
+.login-wrap .form-join .btn-group .btn.active {background: #8265F6; border-color: #8265F6; color: #fff;}
+.login-wrap .form-join .btn-group .btn-login {margin-top: 16px;}
+.login-wrap .form-join .btn-group .form-notice {position: relative; width: 100%; margin-top: 30px; color: rgba(0, 0, 0, 0.3); font-size: 13px; font-weight: 500; line-height: 140%; text-align: center; letter-spacing: -0.01em;}
+.login-wrap .form-join .btn-group .form-notice::before,
+.login-wrap .form-join .btn-group .form-notice::after {content: ''; position: absolute; top: 50%; width: 62px; height: 1px; background: #E6E8F1; transform: translateY(-50%);}
+.login-wrap .form-join .btn-group .form-notice::before {left: 0;}
+.login-wrap .form-join .btn-group .form-notice::after {right: 0;}

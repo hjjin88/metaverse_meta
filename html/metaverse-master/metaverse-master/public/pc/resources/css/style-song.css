@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+.modal-title {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #000;
+    width: 100vw;
+    text-align: center;
+}
+.modal-header {
+    align-items: center;
+    padding: 14px 15px;
+}
+.modal-header .close {
+    padding: 15px 20px 15px 0;
+    float: right;
+    width: 51px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 1;
+}
+.modal-body {
+    min-height: 550px;
+    padding: 30px 66px;
+}
+.modal-content {
+    /* min-width: 787px; */
+    background: #FFFFFF;
+    box-shadow: 10px 10px 30px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    border: 0;
+}
+.modal-body .h6-title {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    color: #000000;
+}
+.modal-body .h6-title.type1 {
+    font-weight: 400;
+    color: #666;
+}
+.text-small {
+    font-weight: 400;
+    font-size: 10px;
+    color: #666666;
+}
+.modal-footer {
+    justify-content: center;
+    border: 0;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.btn {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 11px 0;
+    margin: 0 5px;
+    min-width: 162px;
+}
+.btn.big {
+    min-width: 335px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #8265F6;
+    border-color: #8265F6;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #8265F6;
+    border-color: #8265F6;
+}
+.btn-outline-secondary {
+    color: #333333;
+    border-color: #bbb;
+    background: #fff;
+}
+.btn-outline-secondary:hover {
+    color: #333333;
+    border-color: #bbb;
+    background: #fff;
+}
+.btn.btn-sm {
+    min-width: 63px;
+    height: 20px;
+    line-height: 0;
+    font-weight: 500;
+    font-size: 10px;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+}
+.btn.focus,.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,0)
+}
+.box-gray {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background: #F2F3F8;
+    border: 1px solid #EEEEEE;
+    border-radius: 20px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #CDCFD9;
+}
+.box-gray.type1 {
+    padding: 37px 0;
+}
+.box-gray .scrolltype {
+    position: relative;
+    height: 186px;
+    overflow-y: scroll;
+}
+.box-gray .txt {
+    font-size: 14px;
+}
+.box-gray a.fileselect {
+ text-decoration: underline;
+ text-underline-position: under;
+ color: #CDCFD9; 
+}
+/* 이미지형 홍보물설정 이미지선택 */
+.thumblist li {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.checkbox-label {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+  
+.checkbox-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    border: 0;
+    background: url("../../resources/images/icon/icon-check.png") no-repeat center center;
+}
+
+.checkbox-input:checked + .checkbox-image {
+    background-image: url("../../resources/images/icon/icon-checked-arrow.png");
+}
+
+.checkbox-input:checked + .checkbox-image + img {
+    border: 1px solid #8265F6;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+}
+.checkbox-label img {
+    width: 85px;
+    height: 85px;
+}
+.btn-wrap.position-absolute.box-right {
+    right: 20px;
+    bottom: 10px;
+}
+
+.linkaddresswrite {
+    position: relative;
+    border:0;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.6);
+    font-weight: 400;
+    font-size: 13px;
+    color: #555555;
+    padding-bottom: 15px;
+}
+.linkaddresswrite::placeholder {
+    color: rgba(0, 0, 0, 0.15);
+}
+.linkaddressdelete {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+.videoplayicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -22px;
+    margin-top: -22px;
+}
+@media (min-width: 992px) {
+    .modal-lg, .modal-xl {
+        max-width: 790px;
+    }
+}
+@media (min-width: 576px){
+    .modal-lg, .modal-xl {
+        max-width: 790px;
+    }
+}
