@@ -43,6 +43,9 @@ const UnKnowBtn = ({ popName, setPopName }) => {
                 <button onClick={ e => { setPopName('ConsEnd'); }} style={{background:'#f9ff7e', color:"#000"}}>상담 종료 버튼</button>
                 <button onClick={ e => { setPopName('ConsRequestAlarm'); }} style={{background:'#f9ff7e', color:"#000"}}>상담 참여 요청 버튼</button>
                 <button onClick={ e => { setPopName('ClientList'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>내담자목록 버튼</button>
+
+                <div style={{flex:'none', width: '100%', border: '1px solid red'}}></div>
+                <button onClick={ e => { setPopName('LectureRoom00'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>강의실가이드</button>
             </div>
         </div>
         </>
