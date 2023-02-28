@@ -22,21 +22,34 @@
     background: {
       color: #fff;
     }
+    max-width: calc(100dvw - 40px - 64px);
+    max-height: calc(100dvh - 40px);
   }
 
   &-center {
     top: 50%;
     left: 50%;
-    //width: 100%;
-    max-width: calc(100dvw - 40px - 64px);
-    max-height: calc(100dvh - 40px);
     transform: translate(calc(-50% - 32px), -50%);
+    //width: 100%;
     @include layer;
   }
 
-  &-right-top {}
+  &-right-top {
+    top: 20px;
+    right: 84px;
+    @include layer;
+  }
 
-  &-right-center {}
+  &-right-center {
+    top: 50%;
+    right: 84px;
+    transform: translate(0, -50%);
+    @include layer;
+  }
 
-  &-right-bottom {}
+  &-right-bottom {
+    bottom: 20px;
+    right: 84px;
+    @include layer;
+  }
 }
