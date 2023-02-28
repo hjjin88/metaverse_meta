@@ -1,0 +1,319 @@
+import Menu from "./Menu";
+import Map from "./Map";
+import Chatting from "./Chatting";
+import Around from "./Around";
+import AroundAll from "./AroundAll";
+import MyProfileView from "./MyProfileView";
+import ProfileView from "./ProfileView";
+import Emoji from "./Emoji";
+import EmojiAll from "./EmojiAll";
+import More from "./More";
+import MyProfile from "./MyProfile";
+import MyFriend from "./MyFriend";
+import Follow from "./Follow";
+import Message from "./Message";
+import MessageInner from "./MessageInner";
+import MyActivity from "./MyActivity";
+import MySetting from "./MySetting";
+
+import Alarm01 from "./Alarm01";
+import Copypop from "./Copypop";
+// import Copypop02 from "./Copypop02";
+import Tutorial from "./Tutorial";
+import Announcement from "./Announcement";
+import Tour from "./Tour";
+import Voters from "./Voters";
+import VotersProfileView from "./VotersProfileView";
+import TourParticipant from "./TourParticipant";
+import Invite from "./Invite";
+import TourEnd from "./TourEnd";
+import NpcTourStart from "./NpcTourStart";
+import NpcTourEnd from "./NpcTourEnd";
+import NpcInstl from "./NpcInstl";
+import NpcInstlGuide from "./NpcInstlGuide";
+import NpcDelete from "./NpcDelete";
+import NpcDeletePop from "./NpcDeletePop";
+import ConsProduce from "./ConsProduce";
+// import ConsProduce02 from "./ConsProduce02";
+import ConsProduce03 from "./ConsProduce03";
+import ConsEntrance from "./ConsEntrance";
+import ConsEntrance02 from "./ConsEntrance02";
+import ConsEntrance03 from "./ConsEntrance03";
+// 내담자 모드 상담실 입장-시간초과 후 발생 페이지
+import ConsEntrance04 from "./ConsEntrance04";
+import ConsEnd from "./ConsEnd";
+import ConsRequestAlarm from "./ConsRequestAlarm";
+import ClientList from "./ClientList";
+import ClientListAll from "./ClientListAll";
+import PrivateScreen from "./PrivateScreen";
+import ScreenShareAlarm from "./ScreenShareAlarm";
+import ScreenShare from "./ScreenShare";
+import MicCamSet from "./MicCamSet";
+import StudyStatus from "./StudyStatus";
+import ProfileDrawer from "./ProfileDrawer";
+import Promotion01 from "./Promotion/Promotion01";
+import Promotion02 from "./Promotion/Promotion02";
+import Promotion03 from "./Promotion/Promotion03";
+import Promotion04 from "./Promotion/Promotion04";
+import Promotion05 from "./Promotion/Promotion05";
+import Promotion06 from "./Promotion/Promotion06";
+import Promotion07 from "./Promotion/Promotion07";
+import Promotion08 from "./Promotion/Promotion08";
+
+
+
+import More01 from "./Morepop/More01";
+import More02 from "./Morepop/More02";
+import More03 from "./Morepop/More03";
+import More04 from "./Morepop/More04";
+import More05 from "./Morepop/More05";
+import More06 from "./Morepop/More06";
+import More07 from "./Morepop/More07";
+import More08 from "./Morepop/More08";
+import More09 from "./Morepop/More09";
+import More10 from "./Morepop/More10";
+import More11 from "./Morepop/More11";
+import More12 from "./Morepop/More12";
+import More13 from "./Morepop/More13";
+// import More14 from "./Morepop/More14";
+
+
+const Popups = ({ popName, setPopName }) => {
+    return (
+        <>
+        {/* LtTopBar */}
+        { popName === 'Menu' && (
+          <Menu setPopName={setPopName} />
+        )}
+        { popName === 'Map' && (
+          <Map setPopName={setPopName} />
+        )}
+        {/* BtBar */}
+        { popName === 'Chatting' && (
+          <Chatting setPopName={setPopName} />
+        )}
+        { popName === 'Around' && (
+          <Around setPopName={setPopName} />
+        )}
+        { popName === 'AroundAll' && (
+          <AroundAll setPopName={setPopName} />
+        )}
+        { popName === 'MyProfileView' && (
+          <MyProfileView setPopName={setPopName} />
+        )}
+        { popName === 'ProfileView' && (
+          <ProfileView setPopName={setPopName} />
+        )}
+        { popName === 'Emoji' && (
+          <Emoji setPopName={setPopName} />
+        )}
+        { popName === 'EmojiAll' && (
+          <EmojiAll setPopName={setPopName} />
+        )}
+        { popName === 'More' && (
+          <More setPopName={setPopName} />
+        )}
+        {/* RtBar */}
+        { popName === 'MyProfile' && (
+          <MyProfile setPopName={setPopName} />
+        )}
+
+
+        {/* 마이프로필 하단 버튼 */}
+        { popName === 'MyFriend' && (
+          <MyFriend setPopName={setPopName} />
+        )}
+        { popName === 'Follow' && (
+          <Follow setPopName={setPopName} />
+        )}
+        { popName === 'Message' && (
+          <Message setPopName={setPopName} />
+        )}
+        {/* 메세지 읽음 클릭 팝업 */}
+        { popName === 'MessageInner' && (
+          <MessageInner setPopName={setPopName} />
+        )}
+
+        { popName === 'MyActivity' && (
+          <MyActivity setPopName={setPopName} />
+        )}
+        { popName === 'MySetting' && (
+          <MySetting setPopName={setPopName} />
+        )}
+
+        {/* 알림창 */}
+        { popName === 'Alarm01' && (
+          <Alarm01 setPopName={setPopName} />
+        )}
+        { popName === 'Copypop' && (
+          <Copypop setPopName={setPopName} />
+        )}
+        {/* { popName === 'Copypop02' && (
+          <Copypop02 setPopName={setPopName} />
+        )} */}
+        { popName === 'Tutorial' && (
+          <Tutorial setPopName={setPopName} />
+        )}
+        { popName === 'Announcement' && (
+          <Announcement setPopName={setPopName} />
+        )}
+        { popName === 'Tour' && (
+          <Tour setPopName={setPopName} />
+        )}
+        { popName === 'Voters' && (
+          <Voters setPopName={setPopName} />
+        )}
+        { popName === 'VotersProfileView' && (
+          <VotersProfileView setPopName={setPopName} />
+        )}
+        { popName === 'TourParticipant' && (
+          <TourParticipant setPopName={setPopName} />
+        )}
+        { popName === 'Invite' && (
+          <Invite setPopName={setPopName} />
+        )}
+        { popName === 'TourEnd' && (
+          <TourEnd setPopName={setPopName} />
+        )}
+        { popName === 'NpcTourStart' && (
+          <NpcTourStart setPopName={setPopName} />
+        )}
+        { popName === 'NpcTourEnd' && (
+          <NpcTourEnd setPopName={setPopName} />
+        )}
+        { popName === 'NpcInstl' && (
+          <NpcInstl setPopName={setPopName} />
+        )}
+        { popName === 'NpcInstlGuide' && (
+          <NpcInstlGuide setPopName={setPopName} />
+        )}
+        { popName === 'NpcDelete' && (
+          <NpcDelete setPopName={setPopName} />
+        )}
+        { popName === 'NpcDeletePop' && (
+          <NpcDeletePop setPopName={setPopName} />
+        )}
+        { popName === 'ConsProduce' && (
+          <ConsProduce setPopName={setPopName} />
+        )}
+        {/* { popName === 'ConsProduce02' && (
+          <ConsProduce02 setPopName={setPopName} />
+        )} */}
+        { popName === 'ConsProduce03' && (
+          <ConsProduce03 setPopName={setPopName} />
+        )}
+        { popName === 'ConsEntrance' && (
+          <ConsEntrance setPopName={setPopName} />
+        )}
+        { popName === 'ConsEntrance02' && (
+          <ConsEntrance02 setPopName={setPopName} />
+        )}
+        { popName === 'ConsEntrance03' && (
+          <ConsEntrance03 setPopName={setPopName} />
+        )}
+        { popName === 'ConsEntrance04' && (
+          <ConsEntrance04 setPopName={setPopName} />
+        )}
+        { popName === 'ConsEnd' && (
+          <ConsEnd setPopName={setPopName} />
+        )}
+        { popName === 'ConsRequestAlarm' && (
+          <ConsRequestAlarm setPopName={setPopName} />
+        )}
+        { popName === 'ClientList' && (
+          <ClientList setPopName={setPopName} />
+        )}
+        { popName === 'ClientListAll' && (
+          <ClientListAll setPopName={setPopName} />
+        )}
+        { popName === 'PrivateScreen' && (
+          <PrivateScreen setPopName={setPopName} />
+        )}
+        { popName === 'ScreenShareAlarm' && (
+          <ScreenShareAlarm setPopName={setPopName} />
+        )}
+        { popName === 'ScreenShare' && (
+          <ScreenShare setPopName={setPopName} />
+        )}
+        { popName === 'MicCamSet' && (
+          <MicCamSet setPopName={setPopName} />
+        )}
+        { popName === 'StudyStatus' && (
+          <StudyStatus setPopName={setPopName} />
+        )}
+        { popName === 'ProfileDrawer' && (
+          <ProfileDrawer setPopName={setPopName} />
+        )}
+        { popName === 'Promotion01' && (
+          <Promotion01 setPopName={setPopName} />
+        )}
+        { popName === 'Promotion02' && (
+          <Promotion02 setPopName={setPopName} />
+        )}
+        { popName === 'Promotion03' && (
+          <Promotion03 setPopName={setPopName} />
+        )}
+        { popName === 'Promotion04' && (
+          <Promotion04 setPopName={setPopName} />
+        )}
+        { popName === 'Promotion05' && (
+          <Promotion05 setPopName={setPopName} />
+        )}
+        { popName === 'Promotion06' && (
+          <Promotion06 setPopName={setPopName} />
+        )}
+        { popName === 'Promotion07' && (
+          <Promotion07 setPopName={setPopName} />
+        )}
+        { popName === 'Promotion08' && (
+          <Promotion08 setPopName={setPopName} />
+        )}
+
+        {/* 더보기 창  */}
+        { popName === 'More01' && (
+          <More01 setPopName={setPopName} />
+        )}
+        { popName === 'More02' && (
+          <More02 setPopName={setPopName} />
+        )}
+        { popName === 'More03' && (
+          <More03 setPopName={setPopName} />
+        )}
+        { popName === 'More04' && (
+          <More04 setPopName={setPopName} />
+        )}
+        { popName === 'More05' && (
+          <More05 setPopName={setPopName} />
+        )}
+        { popName === 'More06' && (
+          <More06 setPopName={setPopName} />
+        )}
+        { popName === 'More07' && (
+          <More07 setPopName={setPopName} />
+        )}
+        { popName === 'More08' && (
+          <More08 setPopName={setPopName} />
+        )}
+        { popName === 'More09' && (
+          <More09 setPopName={setPopName} />
+        )}
+        { popName === 'More10' && (
+          <More10 setPopName={setPopName} />
+        )}
+        { popName === 'More11' && (
+          <More11 setPopName={setPopName} />
+        )}
+        { popName === 'More12' && (
+          <More12 setPopName={setPopName} />
+        )}
+        { popName === 'More13' && (
+          <More13 setPopName={setPopName} />
+        )}
+        {/* { popName === 'More14' && (
+          <More14 setPopName={setPopName} />
+        )} */}
+        </>
+    )
+}
+
+export default Popups;
