@@ -7,7 +7,7 @@ const LectureRoom00 = ({setPopName }) => {
                 <div className="popTit">###title</div>
                 <div className="layer-wrap">
                     <div className="layer-body">
-                        ####content
+                        <div style={{height: '1000px'}}>####content</div>
                     </div>
                     <div className="layer-footer center mb10">
                         <button type="button" className="sec-btn-L tit-20Gy3">확인</button>
