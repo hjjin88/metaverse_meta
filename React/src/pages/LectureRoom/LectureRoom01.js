@@ -14,9 +14,8 @@ const LectureRoom00 = ({setPopName }) => {
                 <div className="popTit">강의실 설정</div>
                 <div className="layer-wrap">
                     <div className="layer-body">
-                        <div className="">
-                            <div className="con-left">
-                                <h2 className="ct-title">디바이스 설정</h2>
+                        <div className="con-row">
+                            <div className="con-col">
                                 <div className="cam-view">
                                     <div className="cam-box">
                                         <video className="video" src="" />
@@ -32,11 +31,11 @@ const LectureRoom00 = ({setPopName }) => {
                                     </div>
                                     <p className="cam-notice">
                                         마이크/카메라 연결 확인
-                                        <span>(설정 &gt; 개인정보 및 보안 &gt; 권한에서 카메라와 마이크 권한 허용이 <br />되어있는지 확인하세요.</span>
+                                        <small>(설정 &gt; 개인정보 및 보안 &gt; 권한에서 카메라와 마이크 권한 허용이 되어있는지 확인하세요.</small>
                                     </p>
                                 </div>
                             </div>
-                            <div className="con-right">
+                            <div className="con-col">
                                 <div className="setting-option">
                                     <h3 className="ct-title-sm">마이크</h3>
                                     <div className="ui-dropdown">

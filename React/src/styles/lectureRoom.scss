@@ -1,13 +1,34 @@
+.con {
+  &-row {
+    display: flex;
+    gap: 20px;
+  }
+
+  &-col {
+    width: 50%;
+  }
+}
+
 .lecture {
   &-room {
     color: #000;
   }
 
   &-setting {
+    .cam {
+      &-box {
+        width: 100%;
+        max-width: 387px;
+        margin-bottom: 30px;
+      }
 
+      &-notice {
+
+      }
+    }
   }
 
-  &-assistant{
+  &-assistant {
 
   }
 
