@@ -6,4 +6,37 @@
   &-setting {
 
   }
+
+  &-assistant{
+
+  }
+}
+
+.layer {
+  @mixin layer() {
+    position: absolute;
+    z-index: 10;
+    border: {
+      radius: 20px;
+    };
+    background: {
+      color: #fff;
+    }
+  }
+
+  &-center {
+    top: 50%;
+    left: 50%;
+    //width: 100%;
+    max-width: calc(100dvw - 40px - 64px);
+    max-height: calc(100dvh - 40px);
+    transform: translate(calc(-50% - 32px), -50%);
+    @include layer;
+  }
+
+  &-right-top {}
+
+  &-right-center {}
+
+  &-right-bottom {}
 }
