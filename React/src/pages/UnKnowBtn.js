@@ -27,7 +27,7 @@ const UnKnowBtn = ({ popName, setPopName }) => {
                 <button onClick={ e => { setPopName('More13'); }}>More13/인솔자 모드 팝업창</button>
                 {/* <button onClick={ e => { setPopName('More14'); }} style={{background:'pink'}}>More14/도서관 스터디 공통UI 더보기</button> */}
 
-                
+
                 <button onClick={ e => { setPopName('Promotion01'); }} style={{background:'orchid'}}>홍보물설정</button>
                 <button onClick={ e => { setPopName('Promotion02'); }} style={{background:'orchid'}}>홍보물설정- 이미지 선택01</button>
                 <button onClick={ e => { setPopName('Promotion04'); }} style={{background:'orchid'}}>홀보물 링크 설정</button>
@@ -46,6 +46,7 @@ const UnKnowBtn = ({ popName, setPopName }) => {
 
                 <div style={{flex:'none', width: '100%', border: '1px solid red'}}></div>
                 <button onClick={ e => { setPopName('LectureRoom00'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>강의실가이드</button>
+                <button onClick={ e => { setPopName('LectureRoom01'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>강의실설정</button>
             </div>
         </div>
         </>

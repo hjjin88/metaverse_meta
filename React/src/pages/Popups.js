@@ -78,6 +78,7 @@ import More13 from "./Morepop/More13";
 // import More14 from "./Morepop/More14";
 
 import LectureRoom00 from "./LectureRoom/LectureRoom00";
+import LectureRoom01 from "./LectureRoom/LectureRoom01";
 
 
 const Popups = ({ popName, setPopName }) => {
@@ -316,6 +317,9 @@ const Popups = ({ popName, setPopName }) => {
         )} */}
         { popName === 'LectureRoom00' && (
             <LectureRoom00 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom01' && (
+            <LectureRoom01 setPopName={setPopName} />
         )}
         </>
     )
