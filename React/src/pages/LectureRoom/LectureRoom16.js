@@ -2,16 +2,17 @@ const LectureRoom00 = ({setPopName }) => {
     return (
         <>
             <div className="layer" />
-            <div className="lecture-room layer-right-center">
+            <div className="lecture-room layer-center">
                 <button type="button" className="subclose close16" onClick={(e) => {setPopName();}} />
                 <div className="popTit">###title</div>
                 <div className="layer-wrap">
                     <div className="layer-body">
-                        <div style={{height: '1000px'}}>####content</div>
+                        <div className="poll-chart">
+                            chart
+                        </div>
                     </div>
-                    <div className="layer-footer">
-                        <button type="button" className="button button-primary">확인</button>
-                        <button type="button" className="button button-outline">확인</button>
+                    <div className="layer-footer center mb10">
+                        <button type="button" className="sec-btn-L tit-20Gy3">확인</button>
                     </div>
                 </div>
             </div>

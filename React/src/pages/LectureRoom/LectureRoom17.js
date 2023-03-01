@@ -1,4 +1,4 @@
-const LectureRoom00 = ({setPopName }) => {
+const LectureRoom17 = ({setPopName }) => {
     return (
         <>
             <div className="layer" />
@@ -54,4 +54,4 @@ const LectureRoom00 = ({setPopName }) => {
         </>
     )
 }
-export default LectureRoom00;
+export default LectureRoom17;
