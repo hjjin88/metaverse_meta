@@ -47,6 +47,7 @@ const UnKnowBtn = ({ popName, setPopName }) => {
                 <div style={{flex:'none', width: '100%', border: '1px solid red'}}></div>
                 <button onClick={ e => { setPopName('LectureRoom00'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>강의실가이드</button>
                 <button onClick={ e => { setPopName('LectureRoom01'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>강의실설정</button>
+                <button onClick={ e => { setPopName('LectureRoom02'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>대강당_참여자목록</button>
                 <button onClick={ e => { setPopName('LectureRoom14'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>대강당_투표만들기</button>
                 <button onClick={ e => { setPopName('LectureRoom15'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>대강당_투표목록(강사/진행자)</button>
                 <button onClick={ e => { setPopName('LectureRoom16'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>대강당_투표현황</button>

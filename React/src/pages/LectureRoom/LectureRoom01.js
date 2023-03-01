@@ -1,6 +1,22 @@
 import { useState } from "react";
 
-const LectureRoom00 = ({setPopName }) => {
+const ToggleItem = ({placeholder, item = []}) => {
+    const [SelectToggle, setSelectToggle] = useState(false);
+
+    return (
+        <div className={`request-select${SelectToggle ? ' request-select-toggle' : ''}`}>
+            <button className="request-select-head" onClick={() => setSelectToggle((prev) => !prev)}>
+                <span>{placeholder}</span>
+            </button>
+
+            {SelectToggle && <div className="request-select-list">
+                {item.map((value, key) => (
+                    <button type={"button"} className="request-select-item" key={key}>{value}</button>))}
+            </div>}
+        </div>
+    );
+};
+const LectureRoom00 = ({setPopName}) => {
     const [MikeToggle, setMikeToggle] = useState(false);
     const [MikeOn, setMikeOn] = useState(false);
     const [CamOn, setCamOn] = useState(false);
@@ -9,7 +25,11 @@ const LectureRoom00 = ({setPopName }) => {
         <>
             <div className="layer" />
             <div className="lecture-room MicCamSet layer-center ">
-                <button type="button" className="subclose close16" onClick={(e) => {setPopName();}} />
+                <button
+                    type="button" className="subclose close16" onClick={(e) => {
+                    setPopName();
+                }}
+                />
                 <div className="layer-wrap">
                     <div className="layer-head">강의실 설정</div>
                     <div className="layer-body">
@@ -21,11 +41,19 @@ const LectureRoom00 = ({setPopName }) => {
                                             <video className="video" src="" />
                                             <p>카메라 없음</p>
                                             <div className="cam-box-btns">
-                                                <button type="button" className="btn-cam" onClick={() => {setCamOn(!CamOn)}}>
-                                                    <div className={`camOff ${CamOn ? "camOn" : "camOff"}`}/>
+                                                <button
+                                                    type="button" className="btn-cam" onClick={() => {
+                                                    setCamOn(!CamOn)
+                                                }}
+                                                >
+                                                    <div className={`camOff ${CamOn ? "camOn" : "camOff"}`} />
                                                 </button>
-                                                <button type="button" className="btn-cam" onClick={() => {setMikeOn(!MikeOn)}}>
-                                                    <div className={`mikeOff ${MikeOn ? "mikeOn" : "mikeOff"}`}/>
+                                                <button
+                                                    type="button" className="btn-cam" onClick={() => {
+                                                    setMikeOn(!MikeOn)
+                                                }}
+                                                >
+                                                    <div className={`mikeOff ${MikeOn ? "mikeOn" : "mikeOff"}`} />
                                                 </button>
                                             </div>
                                         </div>
@@ -36,44 +64,48 @@ const LectureRoom00 = ({setPopName }) => {
                                     </div>
                                 </div>
                                 <div className="con-col">
-                                    <div className="setting-option">
-                                        <h3 className="ct-title-sm">강사</h3>
-                                        <div className="ui-dropdown">
-                                            <button type="button" onClick={() => {setMikeToggle(!MikeToggle)}}>
-                                                기본값-마이크배열(디지털마이크){" "}{MikeToggle ? <span className="downArrow"></span> : <span className="downArrow up"></span>}
-                                            </button>
-                                            {MikeToggle&&
-                                                <div className="dropdown-layer">
-                                                    <button type="button">강사님</button>
-                                                </div>
-                                            }
-                                        </div>
+                                    <div className="request-group">
+                                        <strong className="request-title">강사</strong>
+                                        <ToggleItem placeholder="강사님A" item={['강사님A', '강사님B']} />
+                                    </div>
 
-                                        <h3 className="ct-title-sm">진행자</h3>
-                                        <div className="lecture-assistant">
-                                            <ul>
-                                                <li className="Profile-set">
-                                                    <div className="Profile-con">
-                                                        <div>
-                                                            <img className="Profile-img" src="/resources/img/bg.png" alt="프로필 사진 이미지" />
-                                                        </div>
-                                                        <button type="button" className="IDBox" onClick={ e => { setPopName('MyProfileView'); }}>
-                                                            <p className="ID">DDDDDDDDGG</p>
-                                                            <p>방장</p>
-                                                        </button>
+                                    <div className="request-group">
+                                        <strong className="request-title">진행자</strong>
+                                        <ul className="lecture-assistant popCon ty-01">
+                                            <li className="Profile-set">
+                                                <div className="Profile-con">
+                                                    <div>
+                                                        <img className="Profile-img" src="/resources/img/bg.png" alt="프로필 사진 이미지" />
+                                                        <img className="Profile-mark" src="/resources/img/host.svg" alt="방장 아이콘 이미지" />
                                                     </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                                    <button type="button" className="IDBox">
+                                                        <p className="ID">DDDDDDDDGG</p>
+                                                        <p>방장</p>
+                                                    </button>
+                                                </div>
+                                                <div className="AroundIconBox">
+                                                    <button type="button">
+                                                        <div className="videoOn30"></div>
+                                                    </button>
+                                                    <button type="button">
+                                                        <div className="mikeOff30"></div>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
 
-                                        <h3 className="ct-title-sm">강의 정보를 작성해 주세요.</h3>
-                                        <div className="form-textarea">
-                                        <textarea name="" id="" cols="30" placeholder="
-                                        강의 정보는 1~100자 이내로 입력해주세요.&#13;&#10;
-                                        ex)&#13;&#10;
-                                        강사 : 홍길동&#13;&#10;
-                                        강의제목 : 한국어 초급&#13;&#10;
-                                        유의사항 : 수업 시간 엄수"></textarea>
+                                    <div className="request-group">
+                                        <strong className="request-title">강의 정보를 작성해 주세요.</strong>
+                                        <div className="request-textarea">
+                                                <textarea
+                                                    name="" id="" cols="30" placeholder="
+                                                    강의 정보는 1~100자 이내로 입력해주세요.&#13;&#10;
+                                                    ex)&#13;&#10;
+                                                    강사 : 홍길동&#13;&#10;
+                                                    강의제목 : 한국어 초급&#13;&#10;
+                                                    유의사항 : 수업 시간 엄수"
+                                                ></textarea>
                                         </div>
                                     </div>
                                 </div>

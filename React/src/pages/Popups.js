@@ -79,6 +79,7 @@ import More13 from "./Morepop/More13";
 
 import LectureRoom00 from "./LectureRoom/LectureRoom00";
 import LectureRoom01 from "./LectureRoom/LectureRoom01";
+import LectureRoom02 from "./LectureRoom/LectureRoom02";
 import LectureRoom14 from "./LectureRoom/LectureRoom14";
 import LectureRoom15 from "./LectureRoom/LectureRoom15";
 import LectureRoom16 from "./LectureRoom/LectureRoom16";
@@ -325,6 +326,9 @@ const Popups = ({ popName, setPopName }) => {
         )}
         { popName === 'LectureRoom01' && (
             <LectureRoom01 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom02' && (
+            <LectureRoom02 setPopName={setPopName} />
         )}
         { popName === 'LectureRoom14' && (
             <LectureRoom14 setPopName={setPopName} />
