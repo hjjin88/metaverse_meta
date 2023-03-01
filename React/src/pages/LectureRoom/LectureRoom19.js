@@ -9,8 +9,8 @@ const LectureRoom00 = ({setPopName }) => {
             <div className="layer" />
             <div className="lecture-room layer-right-top">
                 <button type="button" className="subclose close16" onClick={(e) => {setPopName();}} />
-                <div className="popTit">발표자</div>
                 <div className="layer-wrap">
+                    <div className="layer-head">발표자</div>
                     <div className="layer-body">
                         <div className="lecture-call-list">
                             <div className="lecture-call-item">

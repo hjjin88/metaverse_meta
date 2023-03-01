@@ -611,6 +611,20 @@ $res_root: 'http://localhost:3000';
     max-height: calc(100dvh - 40px);
 
     .layer {
+      &-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        //width: 100%;
+        padding: 15px 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        color: #000;
+        border-bottom: 1px solid #eee;
+      }
+
       &-wrap {
         display: flex;
         flex-direction: column;
