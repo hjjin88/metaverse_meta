@@ -1,18 +1,19 @@
 const LectureRoom00 = ({setPopName }) => {
     return (
         <>
-            <div className="layer" />
-            <div className="lecture-room layer-right-center">
-                <button type="button" className="subclose close16" onClick={(e) => {setPopName();}} />
-                <div className="layer-wrap">
-                    <div className="layer-head">###title</div>
-                    <div className="layer-body">
-                        <div style={{height: '1000px'}}>####content</div>
+            <div className="Alarm prompt">
+                <div className="prompt-con">
+                    <p className="prompt-title">강의 정보</p>
+                    <div className="prompt-util">
+                        <div className="request-input request-input-round">
+                            <input type="text" />
+                            <button type="button" className="btn-edit"><i className="icon-edit">edit</i></button>
+                        </div>
                     </div>
-                    <div className="layer-footer">
-                        <button type="button" className="button button-primary">확인</button>
-                        <button type="button" className="button button-outline">확인</button>
-                    </div>
+                </div>
+                <div className="Alarm-Btns">
+                    <button type="button" onClick={ e => { setPopName(); }}>취소</button>
+                    <button type="button">확인</button>
                 </div>
             </div>
         </>

@@ -26,7 +26,9 @@ $res_root: 'http://localhost:3000';
   &-con{
     padding: {
       top: 30px;
+      right:12px;
       bottom: 15px;
+      left: 12px;
     }
     text-align: center;
   }
@@ -55,10 +57,18 @@ $res_root: 'http://localhost:3000';
   }
 }
 
+.icon-edit {
+  display: inline-block;
+  font: 0/0 a;
+  width: 14px;
+  height: 14px;
+  background: {
+    repeat: no-repeat;
+    image: url($res_root + '/resources/img/edit-pen.svg');
+  };
+  vertical-align: top;
+};
 
-/*!
- * 영상
- */
 .lecture {
   &-room {
     color: #000;
@@ -501,6 +511,28 @@ $res_root: 'http://localhost:3000';
         color: #000;
         opacity: 0.15;
       }
+    }
+
+    .btn-edit{
+      padding: 10px;
+      margin-right: 8px;
+    }
+  }
+
+  &-input-round {
+    justify-content: space-between;
+    padding-left: 18px;
+    color: #555;
+    border: {
+      width: 1px;
+      style: solid;
+      color: #ddd;
+      radius: 20px;
+    }
+    overflow: hidden;
+
+    input[type="text"] {
+      height: 100%;
     }
   }
 
@@ -1167,14 +1199,7 @@ $res_root: 'http://localhost:3000';
         };
 
         button {
-          font: 0/0 a;
-          width: 14px;
-          height: 14px;
           margin-left: 6px;
-          background: {
-            repeat: no-repeat;
-            image: url($res_root + '/resources/img/edit-pen.svg');
-          };
         }
       }
     }
