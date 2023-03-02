@@ -59,10 +59,10 @@ const LectureRoom00 = ({setPopName}) => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className="cam-notice">
+                                        <div className="cam-notice">
                                             마이크/카메라 연결 확인
-                                            <small>(설정 &gt; 개인정보 및 보안 &gt; 권한에서 카메라와 마이크 권한 허용이 되어있는지 확인하세요.</small>
-                                        </p>
+                                            <small>(설정 &gt; 개인정보 및 보안 &gt; 권한에서 카메라와 마이크 권한 허용이 되어있는지 확인하세요.)</small>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="con-col">
@@ -73,25 +73,31 @@ const LectureRoom00 = ({setPopName}) => {
 
                                     <div className="request-group">
                                         <strong className="request-title">진행자</strong>
-                                        <ul className="lecture-assistant popCon ty-01">
-                                            <li className="Profile-set">
-                                                <div className="Profile-con">
-                                                    <div>
-                                                        <img className="Profile-img" src="/resources/img/bg.png" alt="프로필 사진 이미지" />
-                                                        <img className="Profile-mark" src="/resources/img/host.svg" alt="방장 아이콘 이미지" />
+                                        <ul>
+                                            <li className="lecture-assistant">
+                                                <div class="lecture-assistant-wrap">
+                                                    <div className="lecture-assistant-photo" style={{ backgroundColor: '#CAD8ED' }}>
+                                                        <img src="/resources/img/bg.png" alt="프로필 사진 이미지" />
                                                     </div>
-                                                    <button type="button" className="IDBox">
-                                                        <p className="ID">DDDDDDDDGG</p>
-                                                        <p>방장</p>
-                                                    </button>
+                                                    <div className="lecture-assistant-name">진행자A</div>
                                                 </div>
-                                                <div className="AroundIconBox">
-                                                    <button type="button">
-                                                        <div className="videoOn30"></div>
-                                                    </button>
-                                                    <button type="button">
-                                                        <div className="mikeOff30"></div>
-                                                    </button>
+                                                <div>
+                                                    <label className="request-radio">
+                                                        <input type="radio" />
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li className="lecture-assistant">
+                                                <div class="lecture-assistant-wrap">
+                                                    <div className="lecture-assistant-photo" style={{ backgroundColor: '#E4CAED' }}>
+                                                        <img src="/resources/img/npc.png" alt="프로필 사진 이미지" />
+                                                    </div>
+                                                    <div className="lecture-assistant-name">진행자A</div>
+                                                </div>
+                                                <div>
+                                                    <label className="request-radio">
+                                                        <input type="radio" />
+                                                    </label>
                                                 </div>
                                             </li>
                                         </ul>
