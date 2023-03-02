@@ -26,7 +26,7 @@ const LectureRoom00 = ({setPopName }) => {
                                        <div>
                                            <span className="poll-chart-name">짜장</span>
                                            <span className="poll-chart-value">1/4</span>
-                                           <span className="poll-chart-graph" style={{width: '10%'}}></span>
+                                           <span className="poll-chart-graph" style={{width: '0%'}}></span>
                                        </div>
                                    </label>
                                </li>
@@ -36,7 +36,7 @@ const LectureRoom00 = ({setPopName }) => {
                                         <div>
                                             <span className="poll-chart-name">짜장</span>
                                             <span className="poll-chart-value">1/4</span>
-                                            <span className="poll-chart-graph" style={{width: '20%'}}></span>
+                                            <span className="poll-chart-graph" style={{width: '0%'}}></span>
                                         </div>
                                     </label>
                                 </li>
@@ -46,7 +46,7 @@ const LectureRoom00 = ({setPopName }) => {
                                         <div>
                                             <span className="poll-chart-name">짜장</span>
                                             <span className="poll-chart-value">1/4</span>
-                                            <span className="poll-chart-graph" style={{width: '30%'}}></span>
+                                            <span className="poll-chart-graph" style={{width: '0%'}}></span>
                                         </div>
                                     </label>
                                 </li>
@@ -56,7 +56,7 @@ const LectureRoom00 = ({setPopName }) => {
                                         <div>
                                             <span className="poll-chart-name">짜장</span>
                                             <span className="poll-chart-value">1/4</span>
-                                            <span className="poll-chart-graph" style={{width: '40%'}}></span>
+                                            <span className="poll-chart-graph" style={{width: '0%'}}></span>
                                         </div>
                                     </label>
                                 </li>
@@ -65,7 +65,7 @@ const LectureRoom00 = ({setPopName }) => {
                         </div>
                     </div>
                     <div className="layer-footer center mb10">
-                        <button type="button" className="button button-outline">투표 목록</button>
+                        <button type="button" className="button button-primary">투표 목록</button>
                         <button type="button" className="button button-primary">투표 하기</button>
                     </div>
                 </div>

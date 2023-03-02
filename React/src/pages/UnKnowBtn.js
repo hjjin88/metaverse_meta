@@ -63,10 +63,10 @@ const UnKnowBtn = ({ popName, setPopName }) => {
                 <button onClick={ e => { setPopName('LectureRoom15'); }} style={{background:'#f9ff7e', color:"#000"}}>크로마키</button>
                 <button onClick={ e => { setPopName('LectureRoom16'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>질문하기 리스트</button>
                 <button onClick={ e => { setPopName('LectureRoom17'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>질문하기 폼</button>
-                <button onClick={ e => { setPopName('LectureRoom18'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>대강당 투표 현황 1</button>
-                <button onClick={ e => { setPopName('LectureRoom19'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>대강당 투표 현황 2</button>
-                <button onClick={ e => { setPopName('LectureRoom20'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>대강당 투표 현황 3</button>
-                <button onClick={ e => { setPopName('LectureRoom21'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>대강당 투표 목록 1</button>
+                <button onClick={ e => { setPopName('LectureRoom18'); }} style={{background:'#f9ff7e', color:"#000"}}>대강당 투표 현황 1</button>
+                <button onClick={ e => { setPopName('LectureRoom19'); }} style={{background:'#f9ff7e', color:"#000"}}>대강당 투표 현황 2</button>
+                <button onClick={ e => { setPopName('LectureRoom20'); }} style={{background:'#f9ff7e', color:"#000"}}>대강당 투표 현황 3</button>
+                <button onClick={ e => { setPopName('LectureRoom21'); }} style={{background:'#f9ff7e', color:"#000"}}>대강당 투표 목록</button>
                 <button onClick={ e => { setPopName('LectureRoom22'); }} style={{background:'#f9ff7e', color:"#000"}}>대강당 투표 목록 없음</button>
                 <button onClick={ e => { setPopName('LectureRoom23'); }} style={{background:'#f9ff7e', color:"#000"}}>강의정보 4인</button>
                 {/*<button onClick={ e => { setPopName('LectureRoom24'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>마이크/카메라설정</button>*/}
