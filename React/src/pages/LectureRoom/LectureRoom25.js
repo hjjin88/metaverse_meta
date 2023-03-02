@@ -2,16 +2,74 @@ const LectureRoom00 = ({setPopName }) => {
     return (
         <>
             <div className="layer" />
-            <div className="lecture-room layer-right-center">
-                <button type="button" className="subclose close16" onClick={(e) => {setPopName();}} />
-                <div className="layer-wrap">
-                    <div className="layer-head">###title</div>
-                    <div className="layer-body">
-                        <div style={{height: '1000px'}}>####content</div>
+            <div className="lecture-viewer">
+                <div className="lecture-viewer-announce">
+                    <div className="webcam">
+                        <video className="webcam-video" src="" />
+                        {/*<p className="webcam-none-camera">카메라 없음</p>*/}
+                        <div className="webcam-info">
+                            <div className="webcam-user">
+                                <span className="webcam-user-image"><img src="/resources/img/bg.png" alt=""/></span>
+                                <span className="webcam-user-name">name</span>
+                            </div>
+                            <div className="webcam-buttons">
+
+                            </div>
+                        </div>
                     </div>
-                    <div className="layer-footer">
-                        <button type="button" className="button button-primary">확인</button>
-                        <button type="button" className="button button-outline">확인</button>
+                </div>
+                <div className="lecture-viewer-list">
+                    <div className="webcam">
+                        <video className="webcam-video" src="" />
+                        {/*<p className="webcam-none-camera">카메라 없음</p>*/}
+                        <div className="webcam-info">
+                            <div className="webcam-user">
+                                <span className="webcam-user-image"><img src="/resources/img/bg.png" alt=""/></span>
+                                <span className="webcam-user-name">name</span>
+                            </div>
+                            <div className="webcam-buttons">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="webcam">
+                        <video className="webcam-video" src="" />
+                        {/*<p className="webcam-none-camera">카메라 없음</p>*/}
+                        <div className="webcam-info">
+                            <div className="webcam-user">
+                                <span className="webcam-user-image"><img src="/resources/img/bg.png" alt=""/></span>
+                                <span className="webcam-user-name">name</span>
+                            </div>
+                            <div className="webcam-buttons">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="webcam">
+                        <video className="webcam-video" src="" />
+                        {/*<p className="webcam-none-camera">카메라 없음</p>*/}
+                        <div className="webcam-info">
+                            <div className="webcam-user">
+                                <span className="webcam-user-image"><img src="/resources/img/bg.png" alt=""/></span>
+                                <span className="webcam-user-name">name</span>
+                            </div>
+                            <div className="webcam-buttons">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="webcam">
+                        <video className="webcam-video" src="" />
+                        {/*<p className="webcam-none-camera">카메라 없음</p>*/}
+                        <div className="webcam-info">
+                            <div className="webcam-user">
+                                <span className="webcam-user-image"><img src="/resources/img/bg.png" alt=""/></span>
+                                <span className="webcam-user-name">name</span>
+                            </div>
+                            <div className="webcam-buttons">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -394,6 +394,44 @@ $res_root: 'http://localhost:3000';
       }
     }
   }
+
+  &-viewer {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    max-width: calc(100dvw - 104px);
+    max-height: calc(100dvh - 40px);
+    transform: translate(calc(-50% - 32px), -50%);
+
+    &-announce {
+      display: flex;
+      align-items: center;
+      flex: 1;
+
+      .webcam {
+        width: 100%;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      overflow: auto;
+      max-width: 30%;
+      max-height: calc(100dvh - 40px);
+
+      margin-right: 5px;
+
+      .webcam {
+        max-height: calc(50% - 10px);
+      }
+    }
+  }
 }
 
 /*!
@@ -758,15 +796,14 @@ $res_root: 'http://localhost:3000';
  */
 .webcam {
   position: relative;
-  aspect-ratio: 16 / 9;
   background-color: #F2F3F8;
   box-sizing: content-box;
   border: 1px solid #EEEEEE;
   border-radius: 20px;
 
   &-video {
+    aspect-ratio: 16 / 9;
     width: 100%;
-    height: 100%;
     border-radius: 20px;
   }
 
