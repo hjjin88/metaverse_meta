@@ -1248,3 +1248,69 @@ $res_root: 'http://localhost:3000';
     }
   }
 }
+
+.profile {
+  &-list {
+    display: flex;
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &-photo {
+    position: relative;
+    flex: none;
+    margin-right: 16px;
+
+    &-image {
+      display: block;
+      width: 50px;
+      height: 48px;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+    }
+    &-position {
+      position: absolute;
+      right: -6px;
+      bottom: -6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 11px;
+      background-color: #fff;
+    }
+  }
+  &-user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+
+    &-name {
+      font: {
+        weight: 500;
+        size: 17px;
+      };
+    }
+
+    &-position {
+      color: #707070;
+      font: {
+        weight: 500;
+        size: 13px;
+      };
+    }
+  }
+  &-util {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+}

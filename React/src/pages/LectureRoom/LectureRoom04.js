@@ -16,19 +16,35 @@ const LectureRoom00 = ({setPopName}) => {
                 <div className="popTit">참여자</div>
                 <div className="layer-wrap">
                     <div className="layer-body">
-                        <ul className="popCon ty-01">
-                            <li className="Profile-set">
-                                <div className="Profile-con">
-                                    <div>
-                                        <img className="Profile-img" src="/resources/img/bg.png" alt="프로필 사진 이미지" />
-                                        <img className="Profile-mark" src="/resources/img/host.svg" alt="방장 아이콘 이미지" />
-                                    </div>
-                                    <button type="button" className="IDBox">
-                                        <p className="ID">DDDDDDDDGG</p>
-                                        <p>방장</p>
+                        <ul className="profile">
+                            <li className="profile-list">
+                                <div className="profile-photo">
+                                    <span className="profile-photo-image"><img src="/resources/img/bg.png" alt="프로필 사진 이미지" /></span>
+                                    <span className="profile-photo-position"><img src="/resources/img/host.svg" alt="방장 아이콘 이미지" /></span>
+                                </div>
+                                <button type="button" className="profile-user">
+                                    <span className="profile-user-name">DDDDDDDDGG</span>
+                                    <span className="profile-user-position">방장</span>
+                                </button>
+                                <div className="profile-util">
+                                    <button type="button">
+                                        <div className="videoOn30"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div className="mikeOff30"></div>
                                     </button>
                                 </div>
-                                <div className="AroundIconBox">
+                            </li>
+                            <li className="profile-list">
+                                <div className="profile-photo">
+                                    <span className="profile-photo-image"><img src="/resources/img/bg.png" alt="프로필 사진 이미지" /></span>
+                                    <span className="profile-photo-position"><img src="/resources/img/host.svg" alt="방장 아이콘 이미지" /></span>
+                                </div>
+                                <button type="button" className="profile-user">
+                                    <span className="profile-user-name">DDDDDDDDGG</span>
+                                    <span className="profile-user-position">방장</span>
+                                </button>
+                                <div className="profile-util">
                                     <button type="button">
                                         <div className="videoOn30"></div>
                                     </button>
