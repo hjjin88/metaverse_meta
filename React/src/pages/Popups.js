@@ -80,11 +80,29 @@ import More13 from "./Morepop/More13";
 import LectureRoom00 from "./LectureRoom/LectureRoom00";
 import LectureRoom01 from "./LectureRoom/LectureRoom01";
 import LectureRoom02 from "./LectureRoom/LectureRoom02";
+import LectureRoom03 from "./LectureRoom/LectureRoom03";
+import LectureRoom04 from "./LectureRoom/LectureRoom04";
+import LectureRoom05 from "./LectureRoom/LectureRoom05";
+import LectureRoom06 from "./LectureRoom/LectureRoom06";
+import LectureRoom07 from "./LectureRoom/LectureRoom07";
+import LectureRoom08 from "./LectureRoom/LectureRoom08";
+import LectureRoom09 from "./LectureRoom/LectureRoom09";
+import LectureRoom10 from "./LectureRoom/LectureRoom10";
+import LectureRoom11 from "./LectureRoom/LectureRoom11";
+import LectureRoom12 from "./LectureRoom/LectureRoom12";
+import LectureRoom13 from "./LectureRoom/LectureRoom13";
 import LectureRoom14 from "./LectureRoom/LectureRoom14";
 import LectureRoom15 from "./LectureRoom/LectureRoom15";
 import LectureRoom16 from "./LectureRoom/LectureRoom16";
 import LectureRoom17 from "./LectureRoom/LectureRoom17";
+import LectureRoom18 from "./LectureRoom/LectureRoom18";
 import LectureRoom19 from "./LectureRoom/LectureRoom19";
+import LectureRoom20 from "./LectureRoom/LectureRoom20";
+import LectureRoom21 from "./LectureRoom/LectureRoom21";
+import LectureRoom22 from "./LectureRoom/LectureRoom22";
+import LectureRoom23 from "./LectureRoom/LectureRoom23";
+import LectureRoom24 from "./LectureRoom/LectureRoom24";
+import LectureRoom25 from "./LectureRoom/LectureRoom25";
 
 
 const Popups = ({ popName, setPopName }) => {
@@ -330,6 +348,42 @@ const Popups = ({ popName, setPopName }) => {
         { popName === 'LectureRoom02' && (
             <LectureRoom02 setPopName={setPopName} />
         )}
+        { popName === 'LectureRoom03' && (
+            <LectureRoom03 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom04' && (
+            <LectureRoom04 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom05' && (
+            <LectureRoom05 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom06' && (
+            <LectureRoom06 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom06' && (
+            <LectureRoom06 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom07' && (
+            <LectureRoom07 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom08' && (
+            <LectureRoom08 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom09' && (
+            <LectureRoom09 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom10' && (
+            <LectureRoom10 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom11' && (
+            <LectureRoom11 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom12' && (
+            <LectureRoom12 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom13' && (
+            <LectureRoom13 setPopName={setPopName} />
+        )}
         { popName === 'LectureRoom14' && (
             <LectureRoom14 setPopName={setPopName} />
         )}
@@ -340,10 +394,31 @@ const Popups = ({ popName, setPopName }) => {
             <LectureRoom16 setPopName={setPopName} />
         )}
         { popName === 'LectureRoom17' && (
-            <LectureRoom17 setPopName={setPopName} />
+            <LectureRoom15 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom18' && (
+            <LectureRoom18 setPopName={setPopName} />
         )}
         { popName === 'LectureRoom19' && (
             <LectureRoom19 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom20' && (
+            <LectureRoom20 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom21' && (
+            <LectureRoom21 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom22' && (
+            <LectureRoom22 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom23' && (
+            <LectureRoom23 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom24' && (
+            <LectureRoom24 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom25' && (
+            <LectureRoom25 setPopName={setPopName} />
         )}
         </>
     )
