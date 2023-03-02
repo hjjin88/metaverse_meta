@@ -103,6 +103,7 @@ import LectureRoom22 from "./LectureRoom/LectureRoom22";
 import LectureRoom23 from "./LectureRoom/LectureRoom23";
 import LectureRoom24 from "./LectureRoom/LectureRoom24";
 import LectureRoom25 from "./LectureRoom/LectureRoom25";
+import LectureRoom26 from "./LectureRoom/LectureRoom26";
 
 
 const Popups = ({ popName, setPopName }) => {
@@ -394,7 +395,7 @@ const Popups = ({ popName, setPopName }) => {
             <LectureRoom16 setPopName={setPopName} />
         )}
         { popName === 'LectureRoom17' && (
-            <LectureRoom15 setPopName={setPopName} />
+            <LectureRoom17 setPopName={setPopName} />
         )}
         { popName === 'LectureRoom18' && (
             <LectureRoom18 setPopName={setPopName} />
@@ -418,6 +419,9 @@ const Popups = ({ popName, setPopName }) => {
             <LectureRoom24 setPopName={setPopName} />
         )}
         { popName === 'LectureRoom25' && (
+            <LectureRoom25 setPopName={setPopName} />
+        )}
+        { popName === 'LectureRoom26' && (
             <LectureRoom25 setPopName={setPopName} />
         )}
         </>
