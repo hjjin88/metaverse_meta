@@ -17,7 +17,6 @@ const ToggleItem = ({placeholder, item = []}) => {
     );
 };
 const LectureRoom00 = ({setPopName}) => {
-    const [MikeToggle, setMikeToggle] = useState(false);
     const [MikeOn, setMikeOn] = useState(false);
     const [CamOn, setCamOn] = useState(false);
 
@@ -75,7 +74,7 @@ const LectureRoom00 = ({setPopName}) => {
                                         <strong className="request-title">진행자</strong>
                                         <ul>
                                             <li className="lecture-assistant">
-                                                <div class="lecture-assistant-wrap">
+                                                <div className="lecture-assistant-wrap">
                                                     <div className="lecture-assistant-photo" style={{ backgroundColor: '#CAD8ED' }}>
                                                         <img src="/resources/img/bg.png" alt="프로필 사진 이미지" />
                                                     </div>
@@ -88,7 +87,7 @@ const LectureRoom00 = ({setPopName}) => {
                                                 </div>
                                             </li>
                                             <li className="lecture-assistant">
-                                                <div class="lecture-assistant-wrap">
+                                                <div className="lecture-assistant-wrap">
                                                     <div className="lecture-assistant-photo" style={{ backgroundColor: '#E4CAED' }}>
                                                         <img src="/resources/img/npc.png" alt="프로필 사진 이미지" />
                                                     </div>
