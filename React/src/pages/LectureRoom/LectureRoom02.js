@@ -40,8 +40,8 @@ const LectureRoom00 = ({setPopName}) => {
                         </ul>
                     </div>
                     <div className="layer-footer">
-                        <button type="button" className="sec-btn sec-btn-M tit-20Gy3 on-02">발표자 선정</button>
-                        <button type="button" className="sec-btn-M tit-20Gy3">강제 퇴장</button>
+                        <button type="button" className="button button-primary">발표자 선정</button>
+                        <button type="button" className="button button-outline">강제 퇴장</button>
                     </div>
                 </div>
             </div>

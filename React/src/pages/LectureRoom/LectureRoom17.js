@@ -47,7 +47,7 @@ const LectureRoom17 = ({setPopName }) => {
                         </div>
                     </div>
                     <div className="layer-footer">
-                        <button type="button" className="sec-btn-L tit-20Gy3">확인</button>
+                        <button type="button" className="button button-outline">확인</button>
                     </div>
                 </div>
             </div>

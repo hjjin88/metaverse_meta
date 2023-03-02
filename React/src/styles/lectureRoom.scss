@@ -756,8 +756,9 @@ $res_root: 'http://localhost:3000';
       weight: 700;
       size: 20px;
     };
-    width: 335px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 335px;
+    min-width: 160px;
     height: 55px;
     border-radius: calc(55px / 2);
   }
