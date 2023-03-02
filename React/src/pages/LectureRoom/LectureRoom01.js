@@ -37,24 +37,26 @@ const LectureRoom00 = ({setPopName}) => {
                             <div className="con-row">
                                 <div className="con-col">
                                     <div className="cam-view">
-                                        <div className="cam-box">
-                                            <video className="video" src="" />
-                                            <p>카메라 없음</p>
-                                            <div className="cam-box-btns">
-                                                <button
-                                                    type="button" className="btn-cam" onClick={() => {
-                                                    setCamOn(!CamOn)
-                                                }}
-                                                >
-                                                    <div className={`camOff ${CamOn ? "camOn" : "camOff"}`} />
-                                                </button>
-                                                <button
-                                                    type="button" className="btn-cam" onClick={() => {
-                                                    setMikeOn(!MikeOn)
-                                                }}
-                                                >
-                                                    <div className={`mikeOff ${MikeOn ? "mikeOn" : "mikeOff"}`} />
-                                                </button>
+                                        <div className="webcam">
+                                            <video className="webcam-video" src="" />
+                                            <p className="webcam-none-camera">카메라 없음</p>
+                                            <div className="webcam-info align-center">
+                                                <div className="webcam-buttons">
+                                                    <button
+                                                        type="button" className="btn-cam" onClick={() => {
+                                                        setCamOn(!CamOn)
+                                                    }}
+                                                    >
+                                                        <div className={`camOff ${CamOn ? "camOn" : "camOff"}`} />
+                                                    </button>
+                                                    <button
+                                                        type="button" className="btn-cam" onClick={() => {
+                                                        setMikeOn(!MikeOn)
+                                                    }}
+                                                    >
+                                                        <div className={`mikeOff ${MikeOn ? "mikeOn" : "mikeOff"}`} />
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                         <p className="cam-notice">
