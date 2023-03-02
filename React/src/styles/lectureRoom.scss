@@ -1135,13 +1135,15 @@ $res_root: 'http://localhost:3000';
     }
 
     .new {
-      //display: inline-block;
-      //width: 9px;
-      //height: 9px;
-      //margin-left: 4px;
-      //background: {
-      //  //repeat: no-repeat;
-      //};
+      vertical-align: middle;
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      margin-left: 4px;
+      background: {
+        repeat: no-repeat;
+        image: url($res_root + '/resources/img/new.svg');
+      };
     }
 
     .unanswered {

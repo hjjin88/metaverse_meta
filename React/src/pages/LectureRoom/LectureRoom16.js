@@ -29,7 +29,9 @@ const LectureRoom00 = ({setPopName }) => {
                                     <span className="question-list-user"><img src="/resources/img/bg.png" alt=""/></span>
                                 </td>
                                 <td>학생</td>
-                                <td>질문이 있습니다.</td>
+                                <td>질문이 있습니다.
+                                    <i className="new"></i>
+                                </td>
                                 <td><span className="unanswered">미답변</span></td>
                             </tr>
                             <tr>
