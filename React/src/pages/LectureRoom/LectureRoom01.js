@@ -43,14 +43,14 @@ const LectureRoom00 = ({setPopName}) => {
                                             <div className="webcam-info align-center">
                                                 <div className="webcam-buttons">
                                                     <button
-                                                        type="button" className="btn-cam" onClick={() => {
+                                                        type="button" className="webcam-icon" onClick={() => {
                                                         setCamOn(!CamOn)
                                                     }}
                                                     >
                                                         <div className={`camOff ${CamOn ? "camOn" : "camOff"}`} />
                                                     </button>
                                                     <button
-                                                        type="button" className="btn-cam" onClick={() => {
+                                                        type="button" className="webcam-icon" onClick={() => {
                                                         setMikeOn(!MikeOn)
                                                     }}
                                                     >
