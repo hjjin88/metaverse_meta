@@ -632,6 +632,21 @@ $res_root: 'http://localhost:3000';
     left: 0;
     width: 100%;
   }
+
+  &-buttons {
+    display: flex;
+    gap: 9px;
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #fff;
+  }
 }
 
 /*!
