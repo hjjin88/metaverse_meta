@@ -53,18 +53,11 @@ $res_root: 'http://localhost:3000';
     &-item {
       position: relative;
       flex: 0 1 calc(50% - 9px);
-      aspect-ratio: 235 / 138; // 동영상의 비율이 16:9아닌 이유는?
-      //aspect-ratio: 16 / 9;
+      //aspect-ratio: 235 / 138; // 동영상의 비율이 16:9아닌 이유는?
+      aspect-ratio: 16 / 9;
       overflow: hidden;
       box-sizing: content-box;
       min-width: 235px;
-      border: {
-        color: #eee;
-        radius: 20px;
-        style: solid;
-        width: 1px;
-      };
-      background-color: #F2F3F8;
 
       &:is(button) {
         color: #ccc;
@@ -72,64 +65,9 @@ $res_root: 'http://localhost:3000';
           size: 13px;
           weight: 500;
         };
-        border-color: rgba(238, 238, 238, 0.5);
+        border: 1px solid rgba(238, 238, 238, 0.5);
+        border-radius: 20px;
         background-color: #fff;
-      }
-
-      .video {
-        width: 100%;
-        height: 100%;
-        background-color: #000;
-      }
-
-      .btn-cam {
-        position: absolute;
-        right: 9px;
-        bottom: 9px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 26px;
-        height: 26px;
-        border: {
-          radius: 50%;
-        };
-        background-color: #fff;
-      }
-    }
-
-    &-user {
-      position: absolute;
-      bottom: 9px;
-      left: 9px;
-      display: flex;
-      align-items: center;
-
-      &-image {
-        overflow: hidden;
-        display: inline-flex;
-        width: 30px;
-        height: 30px;
-        margin-right: 8px;
-        border: {
-          radius: 50%;
-        };
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-
-      &-name {
-        color: #FFFFFF;
-        font: {
-          size: 12px;
-          weight: 500;
-        };
-        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
       }
     }
 
@@ -593,13 +531,9 @@ $res_root: 'http://localhost:3000';
   position: relative;
   aspect-ratio: 16 / 9;
   background-color: #F2F3F8;
+  box-sizing: content-box;
   border: 1px solid #EEEEEE;
   border-radius: 20px;
-
-  .align-center {
-    display: flex;
-    justify-content: center;
-  }
 
   &-video {
     width: 100%;
@@ -628,24 +562,68 @@ $res_root: 'http://localhost:3000';
 
   &-info {
     position: absolute;
-    bottom: 12px;
+    bottom: 9px;
     left: 0;
+    display: flex;
     width: 100%;
+    padding: 0 9px;
   }
 
   &-buttons {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
     gap: 9px;
+    margin-bottom: 3px;
   }
 
   &-icon {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 26px;
     height: 26px;
     border-radius: 13px;
     background-color: #fff;
+  }
+
+  &-user {
+    display: inline-flex;
+    align-items: center;
+    justify-self: flex-start;
+
+    &-image {
+      overflow: hidden;
+      display: inline-flex;
+      width: 30px;
+      height: 30px;
+      margin-right: 8px;
+      border: {
+        radius: 50%;
+      };
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-name {
+      color: #FFFFFF;
+      font: {
+        size: 12px;
+        weight: 500;
+      };
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    ~ .webcam-buttons {
+      justify-content: flex-end;
+      margin-bottom: 0;
+    }
   }
 }
 

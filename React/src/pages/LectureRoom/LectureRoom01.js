@@ -40,7 +40,7 @@ const LectureRoom00 = ({setPopName}) => {
                                         <div className="webcam">
                                             <video className="webcam-video" src="" />
                                             <p className="webcam-none-camera">카메라 없음</p>
-                                            <div className="webcam-info align-center">
+                                            <div className="webcam-info">
                                                 <div className="webcam-buttons">
                                                     <button
                                                         type="button" className="webcam-icon" onClick={() => {
