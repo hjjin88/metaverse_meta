@@ -813,7 +813,50 @@ $res_root: 'http://localhost:3000';
   }
 
   &-chart {
+    &-title {
+      font: {
+        weight: 700;
+        size: 12px;
+      };
+      padding: 20px;
+    }
+    &-info {
+      font: {
+        size: 11px;
+      };
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border: {
+        width: 1px 0;
+        style: solid;
+        color: #F1F1F1;
+      };
+
+      div {
+        flex: 1;
+      }
+
+      span {
+        font-weight: 500;
+
+        &::after {
+          content: '';
+          vertical-align: middle;
+          display: inline-block;
+          width: 1px;
+          height: 9px;
+          margin: 0 6px;
+          background-color: #ddd;
+        }
+      }
+
+      strong {
+        font-weight: 700;
+      }
+    }
     &-list {
+      margin-bottom: 10px;
       li {
         margin-top: 10px;
       }
@@ -852,6 +895,13 @@ $res_root: 'http://localhost:3000';
       height: 100%;
       pointer-events: none;
       background-color: rgba(130, 101, 246, 0.1);
+    }
+    &-desc {
+      color: #bbb;
+      font: {
+        weight: 400;
+        size: 11px;
+      };
     }
   }
 }
