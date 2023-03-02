@@ -9,7 +9,19 @@ $res_root: 'http://localhost:3000';
   &-col {
     width: 50%;
   }
+
+  @media (max-width: 768px) {
+    &-row {
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    &-col {
+      width: 100%;
+    }
+  }
 }
+
 
 /*!
  * 영상
@@ -21,12 +33,6 @@ $res_root: 'http://localhost:3000';
 
   &-setting {
     .cam {
-      &-view {
-        position: relative;
-        width: 315px;
-        height: 186px;
-      }
-
       &-box {
         width: 100%;
         max-width: 387px;
@@ -34,11 +40,11 @@ $res_root: 'http://localhost:3000';
       }
 
       &-notice {
+        margin-top: 30px;
         color: #666;
         font: {
           size: 13px;
         }
-        line-height: 1.5;
 
         small {
           display: block;
@@ -47,6 +53,7 @@ $res_root: 'http://localhost:3000';
           font: {
             size: 10px;
           }
+          line-height: 1.5;
         }
       }
     }
@@ -58,6 +65,10 @@ $res_root: 'http://localhost:3000';
 
     .request-select-head {
       padding: 12px;
+    }
+
+    .request-select-list {
+      top: 37px;
     }
   }
 
@@ -494,7 +505,6 @@ $res_root: 'http://localhost:3000';
   }
 
   &-textarea {
-    width: 292px;
     height: 143px;
 
     textarea {
