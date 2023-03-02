@@ -22,6 +22,39 @@ $res_root: 'http://localhost:3000';
   }
 }
 
+.prompt {
+  &-con{
+    padding: {
+      top: 30px;
+      bottom: 15px;
+    }
+    text-align: center;
+  }
+
+  &-title {
+    margin-bottom: 11px;
+    color: #222;
+    font: {
+      weight: 700;
+      size: 17px;
+    }
+  }
+
+  &-msg {
+    margin-bottom: 15px;
+    color: #555;
+    font: {
+      weight: 400;
+      size: 15px;
+    }
+    line-height: calc(22 / 15);
+  }
+
+  &-util {
+    margin-top: 20px;
+  }
+}
+
 
 /*!
  * 영상
@@ -501,6 +534,42 @@ $res_root: 'http://localhost:3000';
 
     em {
       margin-left: 5px;
+      color: #555;
+    }
+  }
+
+  &-checkbox {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+
+    input[type="checkbox"] {
+      position: relative;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border: {
+        width: 1px;
+        style: solid;
+        color: #e2e2e2;
+      }
+      cursor: pointer;
+
+      &:checked {
+        border-color: #8265F6;
+        background: {
+          color: #fff;
+          image: url($res_root + '/resources/img/check-purple.svg');
+          position: 50% 50%;
+          repeat: no-repeat;
+        }
+      }
+    }
+
+    em {
+      margin-left: 5px;
+      font-size: 12px;
+      color: #000;
     }
   }
 
@@ -631,6 +700,7 @@ $res_root: 'http://localhost:3000';
     &-box {
       margin: 96px auto;
     }
+
     &-icon {
       display: block;
       width: 44px;
@@ -640,6 +710,7 @@ $res_root: 'http://localhost:3000';
         image: url($res_root + '/resources/img/empty.svg');
       };
     }
+
     &-text {
       color: #bbb;
       font: {

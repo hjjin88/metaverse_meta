@@ -47,7 +47,7 @@ const UnKnowBtn = ({ popName, setPopName }) => {
                 <div style={{flex:'none', width: '100%', border: '1px solid red'}}></div>
                 <button onClick={ e => { setPopName('LectureRoom00'); }} style={{background:'#f9ff7e', color:"#000"}}>강의실가이드</button>
                 <button onClick={ e => { setPopName('LectureRoom01'); }} style={{background:'#f9ff7e', color:"#000"}}>강의실설정</button>
-                <button onClick={ e => { setPopName('LectureRoom02'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>강의실 나가기 팝업</button>
+                <button onClick={ e => { setPopName('LectureRoom02'); }} style={{background:'#f9ff7e', color:"#000"}}>강의실 나가기 팝업</button>
                 <button onClick={ e => { setPopName('LectureRoom03'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>참여자 목록</button>
                 <button onClick={ e => { setPopName('LectureRoom04'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>참여자 목록 all</button>
                 <button onClick={ e => { setPopName('LectureRoom05'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>참여자 목록 all -  방장 넘기기</button>

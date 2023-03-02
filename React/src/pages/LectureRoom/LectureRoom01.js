@@ -120,7 +120,7 @@ const LectureRoom00 = ({setPopName}) => {
                         </div>
                     </div>
                     <div className="layer-footer">
-                        <button type="button" className="button button-outline">확인</button>
+                        <button type="button" className="button button-outline">등록</button>
                     </div>
                 </div>
             </div>
