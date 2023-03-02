@@ -11,7 +11,7 @@ const LectureRoom00 = ({setPopName }) => {
                             <div className="question-list-head">
                                 <strong>강의 안내</strong>
                                 <span>2024 현우진의 뉴런 - 수학Ⅰ
-                                    <button type={"button"}>edit</button>
+                                    <button type={"button"}><i className="icon-edit">edit</i></button>
                                 </span>
                             </div>
                             <table className="table-list">
