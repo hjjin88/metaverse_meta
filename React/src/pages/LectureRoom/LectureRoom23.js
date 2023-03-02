@@ -76,7 +76,27 @@ const LectureRoom00 = ({setPopName }) => {
                                     </div>
                                 </div>
                             </div>
-                            <button type={"button"} className="lecture-call-item">발표자를 추가해주세요</button>
+                            <div className="lecture-call-item">
+                                <div className="webcam">
+                                    <video className="webcam-video" src="" />
+                                    <p className="webcam-none-camera">카메라 없음</p>
+                                    <div className="webcam-info">
+                                        <div className="webcam-user">
+                                            <span className="webcam-user-image"><img src="/resources/img/bg.png" alt=""/></span>
+                                            <span className="webcam-user-name">name</span>
+                                        </div>
+                                        <div className="webcam-buttons">
+                                            <button
+                                                type="button" className="webcam-icon" onClick={() => {
+                                                setMikeOn(!MikeOn)
+                                            }}
+                                            >
+                                                <div className={`mikeOff ${MikeOn ? "mikeOn" : "mikeOff"}`} />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

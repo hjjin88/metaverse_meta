@@ -741,6 +741,21 @@ $res_root: 'http://localhost:3000';
       margin-bottom: 0;
     }
   }
+
+  &-end {
+    color: #fff;
+    font: {
+      weight: 500;
+      size: 10px;
+    };
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 26px;
+    padding: 0 16px;
+    border-radius: 13px;
+    background-color: #000;
+  }
 }
 
 /*!
