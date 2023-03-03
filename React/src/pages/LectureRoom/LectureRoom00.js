@@ -2,6 +2,7 @@ const LectureRoom00 = ({setPopName }) => {
     return (
         <>
             <div className="layer" />
+            {/* [layer-center, layer-right-center, layer-right-bottom, layer-right-top] */}
             <div className="lecture-room layer-right-center">
                 <button type="button" className="subclose close16" onClick={(e) => {setPopName();}} />
                 <div className="layer-wrap">

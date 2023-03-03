@@ -161,6 +161,10 @@ $res_root: 'http://localhost:3000';
       flex-wrap: wrap;
       gap: 10px;
       width: 484px;
+
+      .webcam {
+        border: 1px solid #EEEEEE;
+      }
     }
 
     &-item {
@@ -396,6 +400,7 @@ $res_root: 'http://localhost:3000';
   }
 
   &-viewer {
+    color: #000;
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -414,6 +419,7 @@ $res_root: 'http://localhost:3000';
 
       .webcam {
         width: 100%;
+        aspect-ratio: 1183 / 754;
       }
     }
 
@@ -422,13 +428,32 @@ $res_root: 'http://localhost:3000';
       flex-direction: column;
       gap: 40px;
       overflow: auto;
-      max-width: 30%;
+      max-width: 532px;
       max-height: calc(100dvh - 40px);
 
-      margin-right: 5px;
-
       .webcam {
-        max-height: calc(50% - 10px);
+        aspect-ratio: 532 / 357;
+      }
+    }
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      height: calc(100dvh - 40px);
+
+      &-announce {
+        justify-content: center;
+        .webcam {
+          width: auto;
+          max-width: 100%;
+          height: 100%;
+        }
+      }
+
+      &-list {
+        justify-content: flex-start;
+        flex-direction: row;
+        max-width: none;
+        min-height: 20%;
       }
     }
   }
@@ -798,12 +823,13 @@ $res_root: 'http://localhost:3000';
   position: relative;
   background-color: #F2F3F8;
   box-sizing: content-box;
-  border: 1px solid #EEEEEE;
+  //border: 1px solid #EEEEEE;
   border-radius: 20px;
+  aspect-ratio: 16 / 9;
 
   &-video {
-    aspect-ratio: 16 / 9;
     width: 100%;
+    height: 100%;
     border-radius: 20px;
   }
 
@@ -852,6 +878,25 @@ $res_root: 'http://localhost:3000';
     height: 26px;
     border-radius: 13px;
     background-color: #fff;
+
+    .zoom {
+      width: 16px;
+      height: 16px;
+      background: {
+        repeat: no-repeat;
+        size: contain;
+        image: url($res_root + '/resources/img/zoom20.svg');
+      };
+    }
+
+    .pin {
+      width: 12px;
+      height: 18px;
+      background: {
+        repeat: no-repeat;
+        image: url($res_root + '/resources/img/pin.svg');
+      };
+    }
   }
 
   &-user {
