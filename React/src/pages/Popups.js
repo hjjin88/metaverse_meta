@@ -422,7 +422,7 @@ const Popups = ({ popName, setPopName }) => {
             <LectureRoom25 setPopName={setPopName} />
         )}
         { popName === 'LectureRoom26' && (
-            <LectureRoom25 setPopName={setPopName} />
+            <LectureRoom26 setPopName={setPopName} />
         )}
         </>
     )

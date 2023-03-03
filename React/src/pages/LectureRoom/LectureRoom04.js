@@ -7,26 +7,26 @@ const LectureRoom00 = ({setPopName}) => {
     return (
         <>
             <div className="layer" />
-            <div className="lecture-room MicCamSet layer-right-bottom ">
+            <div className="lecture-room participation layer-right-bottom">
                 <button
                     type="button" className="subclose close16" onClick={(e) => {
                     setPopName();
                 }}
                 />
-                <div className="popTit">참여자</div>
                 <div className="layer-wrap">
+                    <div className="layer-head">참여자</div>
                     <div className="layer-body">
-                        <ul className="profile">
-                            <li className="profile-list">
-                                <div className="profile-photo">
-                                    <span className="profile-photo-image"><img src="/resources/img/bg.png" alt="프로필 사진 이미지" /></span>
-                                    <span className="profile-photo-position"><img src="/resources/img/host.svg" alt="방장 아이콘 이미지" /></span>
+                        <ul>
+                            <li className="participation-list">
+                                <div className="participation-photo">
+                                    <span className="participation-photo-image"><img src="/resources/img/bg.png" alt="프로필 사진 이미지" /></span>
+                                    <span className="participation-position"><img src="/resources/img/host.svg" alt="방장 아이콘 이미지" /></span>
                                 </div>
-                                <button type="button" className="profile-user">
-                                    <span className="profile-user-name">DDDDDDDDGG</span>
-                                    <span className="profile-user-position">방장</span>
+                                <button type="button" className="participation-user">
+                                    <span className="participation-user-name">DDDDDDDDGG</span>
+                                    <span className="participation-user-position">방장</span>
                                 </button>
-                                <div className="profile-util">
+                                <div className="participation-util">
                                     <button type="button">
                                         <div className="videoOn30"></div>
                                     </button>
@@ -35,16 +35,106 @@ const LectureRoom00 = ({setPopName}) => {
                                     </button>
                                 </div>
                             </li>
-                            <li className="profile-list">
-                                <div className="profile-photo">
-                                    <span className="profile-photo-image"><img src="/resources/img/bg.png" alt="프로필 사진 이미지" /></span>
-                                    <span className="profile-photo-position"><img src="/resources/img/host.svg" alt="방장 아이콘 이미지" /></span>
+                            <li className="participation-list">
+                                <div className="participation-photo">
+                                    <span className="participation-photo-image"><img src="/resources/img/bg.png" alt="프로필 사진 이미지" /></span>
+                                    <span className="participation-position"><img src="/resources/img/presenter.svg" alt="발표자 아이콘 이미지" /></span>
                                 </div>
-                                <button type="button" className="profile-user">
-                                    <span className="profile-user-name">DDDDDDDDGG</span>
-                                    <span className="profile-user-position">방장</span>
+                                <button type="button" className="participation-user">
+                                    <span className="participation-user-name">DDDDDDDDGG</span>
+                                    <span className="participation-user-position">발표자</span>
                                 </button>
-                                <div className="profile-util">
+                                <div className="participation-util">
+                                    <button type="button">
+                                        <div className="videoOn30"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div className="mikeOff30"></div>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="participation-list">
+                                <div className="participation-photo">
+                                    <span className="participation-photo-image"><img src="/resources/img/bg.png" alt="프로필 사진 이미지" /></span>
+                                    <span className="participation-position"><img src="/resources/img/counselor.svg" alt="상담사 아이콘 이미지" /></span>
+                                </div>
+                                <button type="button" className="participation-user">
+                                    <span className="participation-user-name">DDDDDDDDGG</span>
+                                    <span className="participation-user-position">상담사</span>
+                                </button>
+                                <div className="participation-util">
+                                    <button type="button">
+                                        <div className="videoOn30"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div className="mikeOff30"></div>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="participation-list">
+                                <div className="participation-photo">
+                                    <span className="participation-photo-image"><img src="/resources/img/bg.png" alt="프로필 사진 이미지" /></span>
+                                    <span className="participation-position"><img src="/resources/img/teacher.svg" alt="강사 아이콘 이미지" /></span>
+                                </div>
+                                <button type="button" className="participation-user">
+                                    <span className="participation-user-name">DDDDDDDDGG</span>
+                                    <span className="participation-user-position">강사</span>
+                                </button>
+                                <div className="participation-util">
+                                    <button type="button">
+                                        <div className="videoOn30"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div className="mikeOff30"></div>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="participation-list">
+                                <div className="participation-photo">
+                                    <span className="participation-photo-image"><img src="/resources/img/bg.png" alt="프로필 사진 이미지" /></span>
+                                    <span className="participation-position guest"></span>
+                                </div>
+                                <button type="button" className="participation-user">
+                                    <span className="participation-user-name">DDDDDDDDGG</span>
+                                    <span className="participation-user-position">게스트</span>
+                                </button>
+                                <div className="participation-util">
+                                    <button type="button">
+                                        <div className="videoOff30"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div className="mikeOn30"></div>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="participation-list">
+                                <div className="participation-photo">
+                                    <span className="participation-photo-image"><img src="/resources/img/bg.png" alt="프로필 사진 이미지" /></span>
+                                    <span className="participation-position guest off"></span>
+                                </div>
+                                <button type="button" className="participation-user">
+                                    <span className="participation-user-name">DDDDDDDDGG</span>
+                                    <span className="participation-user-position">게스트</span>
+                                </button>
+                                <div className="participation-util">
+                                    <button type="button">
+                                        <div className="videoOff30"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div className="mikeOff30"></div>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="participation-list">
+                                <div className="participation-photo">
+                                    <span className="participation-photo-image"><img src="/resources/img/bg.png" alt="프로필 사진 이미지" /></span>
+                                    <span className="participation-position guest"></span>
+                                </div>
+                                <button type="button" className="participation-user">
+                                    <span className="participation-user-name">DDDDDDDDGG</span>
+                                    <span className="participation-user-position">게스트</span>
+                                </button>
+                                <div className="participation-util">
                                     <button type="button">
                                         <div className="videoOn30"></div>
                                     </button>

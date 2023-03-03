@@ -44,13 +44,14 @@ const UnKnowBtn = ({ popName, setPopName }) => {
                 <button onClick={ e => { setPopName('ConsRequestAlarm'); }} style={{background:'#f9ff7e', color:"#000"}}>상담 참여 요청 버튼</button>
                 <button onClick={ e => { setPopName('ClientList'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>내담자목록 버튼</button>
 
-                <div style={{flex:'none', width: '100%', border: '1px solid red'}}></div>
+                <div style={{flex:'none', width: '100%', border: '1px solid #ddd'}}></div>
                 <button onClick={ e => { setPopName('LectureRoom00'); }} style={{background:'#f9ff7e', color:"#000"}}>강의실가이드</button>
                 <button onClick={ e => { setPopName('LectureRoom01'); }} style={{background:'#f9ff7e', color:"#000"}}>강의실설정</button>
                 <button onClick={ e => { setPopName('LectureRoom02'); }} style={{background:'#f9ff7e', color:"#000"}}>강의실 나가기 팝업</button>
-                <button onClick={ e => { setPopName('LectureRoom03'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>참여자 목록</button>
-                <button onClick={ e => { setPopName('LectureRoom04'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>참여자 목록 all</button>
-                <button onClick={ e => { setPopName('LectureRoom05'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>참여자 목록 all -  방장 넘기기</button>
+                <button onClick={ e => { setPopName('LectureRoom03'); }} style={{background:'#f9ff7e', color:"#000"}}>참여자 목록</button>
+                <button onClick={ e => { setPopName('LectureRoom04'); }} style={{background:'#f9ff7e', color:"#000"}}>참여자 목록 all</button>
+                <button onClick={ e => { setPopName('LectureRoom05'); }} style={{background:'#f9ff7e', color:"#000"}}>참여자 목록 all -  방장 넘기기</button>
+                <button onClick={ e => { setPopName('LectureRoom26'); }} style={{background:'#f9ff7e', color:"#000"}}>참여자 목록 all -  발표끝내기</button>
                 <button onClick={ e => { setPopName('LectureRoom06'); }} style={{background:'#f9ff7e', color:"#000"}}>강의 정보</button>
                 <button onClick={ e => { setPopName('LectureRoom07'); }} style={{background:'#f9ff7e', color:"#000"}}>강의 정보 수정</button>
                 <button onClick={ e => { setPopName('LectureRoom08'); }} style={{background:'#f9ff7e', color:"#000"}}>대강당(강사) 투표만들기</button>
@@ -58,7 +59,7 @@ const UnKnowBtn = ({ popName, setPopName }) => {
                 <button onClick={ e => { setPopName('LectureRoom10'); }} style={{background:'#f9ff7e', color:"#000"}}>대강당(강사) 투표 현황</button>
                 <button onClick={ e => { setPopName('LectureRoom11'); }} style={{background:'#f9ff7e', color:"#000"}}>강의정보 4인</button>
                 <button onClick={ e => { setPopName('LectureRoom12'); }} style={{background:'#f9ff7e', color:"#000"}}>강의정보 3인</button>
-                <button onClick={ e => { setPopName('LectureRoom13'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>화면공유 시작 팝업</button>
+                <button onClick={ e => { setPopName('LectureRoom13'); }} style={{background:'#f9ff7e', color:"#000"}}>화면공유 시작 팝업</button>
                 <button onClick={ e => { setPopName('LectureRoom14'); }} style={{background:'#f9ff7e', color:"#000", opacity:"0.7"}}>화면공유</button>
                 <button onClick={ e => { setPopName('LectureRoom15'); }} style={{background:'#f9ff7e', color:"#000"}}>크로마키</button>
                 <button onClick={ e => { setPopName('LectureRoom16'); }} style={{background:'#f9ff7e', color:"#000"}}>질문하기 리스트</button>
